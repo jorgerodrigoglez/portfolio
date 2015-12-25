@@ -1,0 +1,30 @@
+{
+  "name": "Jorge Rodrigo González",
+  "homepage": "https://github.com/jorgerodrigoglez/portfolio",
+  "authors": [
+    "Jorge Rodrigo Gonzalez <jorgerodrigoglez@gmail.com>"
+  ],
+  "description": "Portfolio",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "web",
+    "design",
+    "social",
+    "media",
+    "marketing",
+    "digital",
+    "wordpress"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
