@@ -1,0 +1,15 @@
+/*Centrar Documento*/
+
+@mixin max-width($mixin-max-width : $max-width){
+    max-width: $mixin-max-width;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*FallBack*/
+
+@mixin font-size($font-size : 16 /*se puede variar el valor*/){
+    font-size: $font-size + px;
+    //*font-size: ($font-size / 16) + rem;*\\
+    font-size: ($font-size / $tamaño-fuente) * 1rem;
+}

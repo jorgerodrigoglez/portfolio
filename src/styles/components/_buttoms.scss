@@ -1,0 +1,20 @@
+.btn {
+    color: $blue;
+    background-color: $color-corporativo;
+    line-height: 2;
+    padding-top: .5em;
+    padding-bottom: .5em;
+
+        span {
+            color : $blue
+        }
+
+        &.span {
+            color: $color-corporativo;
+        }
+
+}
+
+.btn::after {
+    content : "#{$color-corporativo}";
+}

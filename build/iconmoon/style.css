@@ -1,0 +1,262 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-wmzk9y');
+	src:url('fonts/icomoon.eot?#iefix-wmzk9y') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?-wmzk9y') format('truetype'),
+		url('fonts/icomoon.woff?-wmzk9y') format('woff'),
+		url('fonts/icomoon.svg?-wmzk9y#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+	content: "\e900";
+}
+.icon-pencil2:before {
+	content: "\e906";
+}
+.icon-images:before {
+	content: "\e90e";
+}
+.icon-book:before {
+	content: "\e91f";
+}
+.icon-profile:before {
+	content: "\e923";
+}
+.icon-file-picture:before {
+	content: "\e927";
+}
+.icon-folder-open:before {
+	content: "\e930";
+}
+.icon-cart:before {
+	content: "\e93a";
+}
+.icon-box-add:before {
+	content: "\e95e";
+}
+.icon-bubbles:before {
+	content: "\e96c";
+}
+.icon-lock:before {
+	content: "\e98f";
+}
+.icon-cloud-upload:before {
+	content: "\e9c3";
+}
+.icon-table:before {
+	content: "\ea70";
+}
+.icon-share:before {
+	content: "\ea7d";
+}
+.icon-mail42:before {
+	content: "\ea87";
+}
+.icon-google-plus3:before {
+	content: "\ea8a";
+}
+.icon-facebook2:before {
+	content: "\ea8d";
+}
+.icon-twitter2:before {
+	content: "\ea92";
+}
+.icon-twitter3:before {
+	content: "\ea93";
+}
+.icon-github:before {
+	content: "\eab1";
+}
+.icon-github4:before {
+	content: "\eab4";
+}
+.icon-wordpress2:before {
+	content: "\eab7";
+}
+.icon-linkedin:before {
+	content: "\eac8";
+}
+.icon-pinterest:before {
+	content: "\ead0";
+}
+.icon-file-pdf:before {
+	content: "\eada";
+}
+.icon-codepen:before {
+	content: "\eae4";
+}
+.icon-newspaper:before {
+	content: "\e904";
+}
+.icon-bullhorn:before {
+	content: "\e91a";
+}
+.icon-connection:before {
+	content: "\e91b";
+}
+.icon-files-empty:before {
+	content: "\e925";
+}
+.icon-phone:before {
+	content: "\e942";
+}
+.icon-alarm:before {
+	content: "\e950";
+}
+.icon-calendar:before {
+	content: "\e953";
+}
+.icon-mobile2:before {
+	content: "\e959";
+}
+.icon-database:before {
+	content: "\e964";
+}
+.icon-forward:before {
+	content: "\e969";
+}
+.icon-spinner:before {
+	content: "\e97a";
+}
+.icon-search:before {
+	content: "\e986";
+}
+.icon-cross:before {
+	content: "\ea0f";
+}
+.icon-checkmark:before {
+	content: "\ea10";
+}
+.icon-enter:before {
+	content: "\ea13";
+}
+.icon-checkbox-checked:before {
+	content: "\ea52";
+}
+.icon-table2:before {
+	content: "\ea71";
+}
+.icon-share2:before {
+	content: "\ea82";
+}
+.icon-mail4:before {
+	content: "\ea86";
+}
+.icon-google-drive:before {
+	content: "\ea8b";
+}
+.icon-instagram:before {
+	content: "\ea90";
+}
+.icon-feed2:before {
+	content: "\ea94";
+}
+.icon-youtube3:before {
+	content: "\ea99";
+}
+.icon-skype:before {
+	content: "\eac6";
+}
+.icon-reddit:before {
+	content: "\eac7";
+}
+.icon-stackoverflow:before {
+	content: "\eacf";
+}
+.icon-paypal:before {
+	content: "\ead6";
+}
+.icon-pencil:before {
+	content: "\e905";
+}
+.icon-stack:before {
+	content: "\e92e";
+}
+.icon-folder-open2:before {
+	content: "\e931";
+}
+.icon-qrcode:before {
+	content: "\e938";
+}
+.icon-location:before {
+	content: "\e947";
+}
+.icon-clock:before {
+	content: "\e94e";
+}
+.icon-bell:before {
+	content: "\e951";
+}
+.icon-printer:before {
+	content: "\e954";
+}
+.icon-user-check:before {
+	content: "\e975";
+}
+.icon-stats-dots:before {
+	content: "\e99b";
+}
+.icon-switch:before {
+	content: "\e9b6";
+}
+.icon-tree:before {
+	content: "\e9bc";
+}
+.icon-cloud-check:before {
+	content: "\e9c4";
+}
+.icon-download2:before {
+	content: "\e9c5";
+}
+.icon-star-full:before {
+	content: "\e9d9";
+}
+.icon-exit:before {
+	content: "\ea14";
+}
+.icon-share22:before {
+	content: "\ea83";
+}
+.icon-feed3:before {
+	content: "\ea95";
+}
+.icon-twitch:before {
+	content: "\ea9b";
+}
+.icon-dropbox:before {
+	content: "\eaaf";
+}
+.icon-star:before {
+	content: "\e600";
+}
+.icon-user:before {
+	content: "\e601";
+}
+.icon-settings:before {
+	content: "\e602";
+}
+.icon-bubble:before {
+	content: "\e603";
+}
+.icon-like:before {
+	content: "\e604";
+}
+.icon-clip:before {
+	content: "\e605";
+}
