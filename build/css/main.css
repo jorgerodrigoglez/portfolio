@@ -1,3 +1,4 @@
+@import url(./normalize.css);
 /*RESET*/
 div,
 header,
@@ -6,6 +7,8 @@ article,
 aside,
 nav,
 button,
+img,
+figure,
 ul,
 ol,
 li,
@@ -37,63 +40,6 @@ h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/*BOX MODEL*/
-*, *::before, *::after {
-  box-sizing: border-box; }
-
-/*MAIN STYLES*/
-body {
-  padding: 0;
-  margin: 0;
-  background-color: aqua;
-  max-width: 1220px;
-  margin-left: auto;
-  margin-right: auto; }
-
-ul,
-li,
-figure,
-img,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0; }
-
-a {
-  font-weight: bold;
-  text-decoration: none;
-  color: black; }
-
-input[type='button'] {
-  font-weight: bold; }
-
-section {
-  width: 100%;
-  background-color: white; }
-
-article {
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto; }
-
-small {
-  text-decoration: underline;
-  color: black;
-  display: inline-block;
-  font-size: 0.73333em; }
-
-.center {
-  text-align: center; }
-
-.left {
-  text-align: left; }
-
-/*H GROUP*/
 h1 {
   font-size: 2.5em;
   font-family: "Cuprum", sans-serif;
@@ -193,6 +139,51 @@ h1 {
 
 .h6 {
   font-size: 1em; }
+
+/*BOX MODEL*/
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+/*MAIN STYLES*/
+body {
+  padding: 0;
+  margin: 0;
+  background-color: aqua;
+  max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto; }
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black; }
+
+section {
+  width: 100%;
+  background-color: white; }
+
+article {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto; }
+
+small {
+  text-decoration: underline;
+  color: black;
+  display: inline-block;
+  font-size: 0.73333em; }
+
+input[type='button'] {
+  font-weight: bold; }
+
+/*Centrar Documento*/
+/*FallBack*/
+/*Clearfix*/
+.center {
+  text-align: center; }
+
+.left {
+  text-align: left; }
 
 /*Witgets*/
 .witgets {
