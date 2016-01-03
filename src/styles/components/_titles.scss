@@ -1,0 +1,123 @@
+/*TITLES*/
+
+//MAIN TITLES
+
+.h1{
+    font-size: $font-h2;
+    padding: .25em;
+
+  }
+
+
+.h2--slogan {
+    background-color: $color-main;
+    color: $color-headers;
+    text-align: center;  ;
+    font-size: $font-h3;
+    font-family: $font-secundary;
+}
+
+.h3--slogan{
+    background-color: $color-secundary;
+    font-size: $font-h6;
+    font-family: $font-secundary;
+    text-align: center;
+    padding-bottom: .25em;
+}
+
+//MEDIA QUERIES
+
+@media all and (min-width: 768px){
+
+    .h1{
+      font-size: $font-h1;
+    }
+
+    .h2--slogan{
+      font-size: $font-h2;
+    }
+
+    .h3--slogan{
+      font-size: $font-h5;
+    }
+
+}
+
+//SECUNDARY TITLES
+
+.h3__title{
+    font-family: $font-main;
+    font-size: $font-h1;
+    color: $blue;
+    text-align: center;
+    background-color: $color-secundary;
+    border-bottom: solid 2px $blue;
+    border-top: solid 2px $blue;
+}
+
+
+.h4__title{
+      font-family: $font-default;
+      font-size: $font-h3;
+      text-align: center;
+      font-weight: bold;
+      color: #000;
+      background-color: transparent;
+      border: dotted 1px #000;
+      margin: .25em 0;
+      padding: .25em 0;
+
+      &::after{
+        font-family: "icomoon";
+        content:"\ea13";
+        float: right;
+        margin-right: .25em;
+      }
+}
+
+//MEDIA QUERIES
+
+
+
+//TITLES MODIFIED
+
+.h3__title__modified{
+    font-family: $font-secundary;
+    font-size: $font-h3*1.2;
+    color: $color-secundary;
+    text-align: center;
+    background-color: $color-headers;
+    border-bottom: dotted 2px $blue;
+    border-top: dotted 2px $blue;
+    padding: .25em 0;
+    margin-top: .25em;
+}
+
+.h4__title__modified {
+  text-align: left;
+  padding-left: .25em;
+  padding-bottom: .25em;
+  padding-top: .25em;
+  background-color: $color-main;
+  color: $color-link;
+  font-size: $font-h4;
+}
+
+
+//MEDIA QUERIES
+
+@media all and (min-width: 768px){
+
+  .h3__title__modified{
+      font-size: $font-h2;
+  }
+
+}
+
+@media all and (min-width: 1024px){
+
+ .h3__title__modified{
+      font-size: $font-h1;
+  }
+
+}

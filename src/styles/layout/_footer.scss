@@ -1,0 +1,45 @@
+/*PRIMARY FOOTER*/
+
+.primary-footer {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    background-color: $color-main;
+    padding: $gutterwidth;
+    margin-top: $gutterwidth;
+   }
+
+    .primary-footer-link {
+        display: table-cell;
+        width: 50%;
+        font-family: $font-secundary;
+        font-size: $font-h6;
+        color: $color-link;
+        font-weight: bold;
+        background-color: $color-secundary;
+        padding: .5em;
+    }
+
+//MEDIA QUERIES
+
+@media all and (min-width: 600px){
+    .primary-footer-link{
+        font-size: $font-h5;
+    }
+
+}
+
+@media all and (min-width: 768px){
+    .primary-footer-link{
+        font-size: $font-h5*1.2;
+    }
+
+}
+
+@media all and (min-width: 1024px){
+    .primary-footer-link{
+        font-size: $font-h4;
+    }
+
+}

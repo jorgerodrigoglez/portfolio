@@ -13,3 +13,13 @@
     //*font-size: ($font-size / 16) + rem;*\\
     font-size: ($font-size / $tamaño-fuente) * 1rem;
 }
+
+/*prefijos*/
+
+@mixin vendors($propiedad, $valor){
+    -webkit-#{$propiedad} : $valor;
+       -moz-#{$propiedad} : $valor;
+        -ms-#{$propiedad} : $valor;
+         -o-#{$propiedad} : $valor;
+            #{$propiedad} : $valor;
+}

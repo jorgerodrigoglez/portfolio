@@ -1,0 +1,82 @@
+  /*NAVIGATION*/
+
+  .main--nav{
+    background-color: $color-secundary;
+
+  }
+
+  .main--nav--list{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+        .main--nav--list--item{
+            width: 95%;
+            @extend %center;
+            background-color: $color-main;
+            font-size: $font-h4;
+            font-family: $font-main;
+            text-align: center;
+            text-shadow: 2px 1px 3px;
+            margin-bottom: .2em;
+            padding: .75em 0;
+            border-left: solid 10px $color-headers;
+            border-right: solid 10px $color-headers;
+        }
+
+        .main--nav--list--item a{
+            background-color: $color-headers;
+            padding: .5em 1.5em;
+            margin-left: .5em;
+            @include vendors(border-radius, 20px);
+            color: $black;
+        }
+
+//MEDIA QUERIES NAVEGATION
+
+ @media all and (min-width: 768px){
+
+    .main--nav--list{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+            .main--nav--list--item{
+                display: table;
+                width: 30%;
+                font-size: $font-h4;
+                text-align: center;
+                background-color: $color-secundary;
+                border-left: none;
+                border: solid 5px $color-main;
+                padding: 0;
+                margin-top: 0;
+                margin-bottom: .5em;
+                @include vendors (border-radius, 20px);
+            }
+
+                .main--nav--list--item a{
+                   display: table-cell;
+                   border: none;
+                   padding: 1em .5em;
+                }
+}
+
+@media all and (min-width: 1024px){
+
+    .main--nav--list{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+       .main--nav--list--item{
+            font-size: $font-h3;
+            width: 30%;
+            padding: .25em;
+    }
+
+}

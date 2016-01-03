@@ -1,21 +1,36 @@
-.btn {
-    color: $blue;
-    background-color: $color-corporativo;
-    line-height: 2;
-    padding-top: .5em;
-    padding-bottom: .5em;
+/*BUTTOMS*/
 
-        span {
-            color : $blue
-        }
-
-        &.span {
-            color: $color-corporativo;
-        }
+.btn--list{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em 0;
 
 }
 
-.btn::after {
-    content : "#{$color-corporativo}";
+    .btn--list--item{
+        font-size: $font-h5;
+        font-family: $font-secundary;
+        background-color: $color-main;
+        @include vendors (border-radius, 40px);
+        padding: .75em;
+        margin: .25em 0;
+
+    }
+
+//MEDIA QUERIES
+
+@media all and (min-width: 768px){
+    .btn--list--item{
+        font-size: $font-h5*1.1;
+    }
+
 }
 
+@media all and (min-width: 1024px){
+    .btn--list--item{
+        font-size: $font-h4;
+    }
+
+}

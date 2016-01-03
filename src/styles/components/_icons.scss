@@ -1,0 +1,128 @@
+/*ICONS*/
+
+
+//WITGETS
+
+.witgets-items{
+    background-color:$color-main;
+    text-align: center;
+    margin-top: .5em;
+    padding-top: .5em;
+    display: none;
+}
+
+    .witgets-list-item{
+        font-size: $font-h4;
+
+    }
+
+//MEDIA QUERIES
+
+@media all and (min-width: 600px){
+    .witgets-items{
+        display: block;
+    }
+    .witgets-list-item{
+        font-size: $font-h3;
+    }
+
+}
+
+//CALL TO ACTTION ICONS
+
+.call-to-action--icons{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $color-secundary;
+    margin-top: .5em;
+    padding: .5em;
+}
+
+    .call-to-action{
+        padding: .25em;
+        font-weight: bold;
+        color: $color-main;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .icon-files-empty,
+    .icon-phone,
+    .icon-wordpress2{
+        font-size: $font-h1;
+        color: $color-headers;cursor: pointer;
+    }
+
+    .icon-files-empty{
+        display: none;
+    }
+
+//MEDIA QUERIES
+
+@media all and (min-width: 600px){
+    .icon-files-empty{
+        display: flex;
+    }
+
+}
+
+
+//FOLLOW BUTTONS
+
+    .icon-star,
+    .icon-like,
+    .icon-share2{
+        padding: .25em;
+        margin: 0 .25em;
+        background-color: $color-secundary;
+        font-size: $font-h3;
+        color: $blue;
+        border: dotted 3px $color-headers;
+        @include vendors(border-radius, 50px);
+    }
+
+//CONTACT-ICONS
+
+        .icon-skype,
+        .icon-mobile2,
+        .icon-calendar{
+            font-size: $font-h4;
+            color : $color-headers;
+            vertical-align: middle;
+        }
+
+        .icon-skype{
+            display: none;
+        }
+
+        .icon-mobile2{
+            display: none;
+        }
+
+//MEDIA QUERIES
+
+@media all and (min-width: 600px){
+
+        .icon-skype,
+        .icon-mobile2,
+        .icon-calendar{
+            font-size: $font-h3;
+        }
+
+        .icon-mobile2{
+            display: flex;
+        }
+}
+
+
+//EXTRA ICONS
+    .icon-clock,
+    .icon-location{
+        font-size: $font-h4;
+        padding: 0 .25em;
+        color: $color-link;
+    }
+
+

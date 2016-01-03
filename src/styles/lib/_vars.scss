@@ -3,23 +3,35 @@
 
 $max-width : 1220px;
 
-$main-color : aqua;
-$secundary-color : white;
-$headers-color : darkblue;
+//COLORS
 
-$red: red;
-$black : black;
-$blue: blue;
+$color-main : rgba(175,238,238,0.7);
+$color-secundary : rgba(224,255,255,0.7);
+$color-headers : rgba(123,104,238,0.7);
 
-$main-font : 'Cuprum', sans-serif;
-$secundary-font : 'Quicksand' , serif;
+$color-link : rgba(0,0,139,1);
+
+$blue : rgba(65,105,225,0.7);
+$red  : rgba(178,34,34, 0.7);
+$black: rgba(0,0,0, 1);
+
+//FONTS
+
+$font-main : 'Cuprum', sans-serif;
+$font-secundary : 'Quicksand' , serif;
 $font-default : serif, arial;
 
-$font-h1 : 2.5em;
-$font-h2 : 1.75em;
-$font-h3 : 1.5em;
-$font-h4 : 1.25em;
-$font-small : 1.1em;
+$font-h1 : 3.5em;
+$font-h2 : 3em;
+$font-h3 : 2.5em;
+$font-h4 : 2em;
+$font-h5 : 1.5em;
+$font-h6 : 1.25em;
+
+
+//MARGIN
+
+$gutterwidth : 1.5em;
 
 
 

@@ -1,0 +1,44 @@
+/*LOGO & FOTO*/
+
+.wrapper-photos{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+    .logo-figure{
+        background-color: transparent;
+    }
+
+    //PHOTOS
+
+        .photo-logo-dcha {
+            width: 6em;
+            height: 10em;
+        }
+
+        .photo-logo-izq{
+            width: 10em;
+            height: 10em;
+        }
+
+//MEDIA QUERIES
+
+@media all and (min-width: 768px){
+
+ //PHOTOS
+        .photo-logo-dcha {
+            width: 8em;
+            height: 12em;
+        }
+
+        .photo-logo-izq{
+            width: 13em;
+            height: 14em;
+        }
+}
+
+
+
+
+

@@ -8,39 +8,36 @@
 /*MAIN STYLES*/
 
 body {
-   padding: 0;
-   margin: 0;
-   background-color: $main-color;
-   max-width: $max-width;
-   margin-left: auto;
-   margin-right: auto;
+   background-color: $color-secundary;
+   @include max-width($max-width);
+   @extend %center;
 }
 
 a{
     font-weight: bold;
     text-decoration: none;
-    color: $black;
+    color: $color-link;
 }
 
-section {
+li{
+  list-style-type: none;
+}
+
+article{
     width: 100%;
-    background-color: $secundary-color;
+    padding: 1em;
+    @extend %center;
 }
 
-article {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+//Microformats
+
+.microformats{
+  width: 100%;
+  font-size: $font-h6;
+  font-family: $font-main;
+  text-align: center;
+  background-color: $color-main;
+  margin-top: 1em;
 }
 
-small{
-    text-decoration: underline;
-    color: $black;
-    display: inline-block;
-    font-size: $font-small/1.5;
-}
-
-input[type='button'] {
-    font-weight: bold;
-}
 

@@ -1,0 +1,103 @@
+/*SOCIAL BUTTONS*/
+
+.social--buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $color-main;
+    max-width: $max-width;
+    padding: 1em 0;
+    margin: 1em 0;
+}
+
+    .icon-linkedin,
+    .icon-twitter2,
+    .icon-facebook2,
+    .icon-google-plus3,
+    .icon-instagram,
+    .icon-pinterest {
+        font-size: $font-h2;
+        color: $color-headers;
+        padding: 0 .1em;
+    }
+
+@media all and (min-width: 600px){
+        .icon-linkedin,
+        .icon-twitter2,
+        .icon-facebook2,
+        .icon-google-plus3,
+        .icon-instagram,
+        .icon-pinterest {
+            font-size: $font-h1;
+        }
+
+}
+
+
+/*FOLLOW-BUTTONS*/
+
+    .follow--buttoms{
+        width: 100%;
+        margin: .25em 0;
+        background-color: transparent;
+        text-align: center;
+    }
+
+
+        .follow--buttoms--icons{
+            display: block;
+            width: 100%;
+            background-color: $color-secundary;
+            padding: .5em 0;
+            margin-top: 1em;
+        }
+
+        //TWITTER WITGET
+        .twitter-follow-button{
+            margin-left: 2em;
+        }
+
+
+@media all and (min-width: 600px){
+
+    .follow--buttoms{
+        display: flex;
+        width: 100%;
+        justify-content: row;
+        flex-direction: space-between;
+    }
+
+
+        .follow--buttoms--icons{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            width: 50%;
+            margin: 0;
+            padding: 0;
+        }
+
+}
+
+//EXTRA ICONS
+
+.extra--icons{
+    display: block;
+    width: 100%;
+    border-bottom: solid 2px $color-main;
+    margin: .5em 0;
+    padding: .5em 0;
+    background-color: $color-main;
+}
+
+
+
+ @media all and (min-width: 600px){
+    .extra--icons{
+        display: flex;
+        width: 50%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}
