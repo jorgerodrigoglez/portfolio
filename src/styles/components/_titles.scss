@@ -10,8 +10,8 @@
 
 
 .h2--slogan {
-    background-color: $color-main;
-    color: $color-headers;
+    background-color: $color-complementary;
+    color: $color-link;
     text-align: center;  ;
     font-size: $font-h3;
     font-family: $font-secundary;
@@ -38,40 +38,56 @@
     }
 
     .h3--slogan{
-      font-size: $font-h5;
+      font-size: $font-h4;
     }
 
 }
+
+@media all and (min-width: 1024px){
+
+    .h2--slogan{
+      font-size: $font-h1;
+    }
+
+}
+
+
 
 //SECUNDARY TITLES
 
 .h3__title{
     font-family: $font-main;
     font-size: $font-h1;
-    color: $blue;
+    color: $black;
     text-align: center;
-    background-color: $color-secundary;
+    background-color: $color-complementary;
     border-bottom: solid 2px $blue;
-    border-top: solid 2px $blue;
+    border-top: solid 8px $color-link;
+    border-bottom: solid 8px $color-link;
 }
 
 
 .h4__title{
-      font-family: $font-default;
+      font-family: $font-main;
       font-size: $font-h3;
       text-align: center;
       font-weight: bold;
       color: #000;
-      background-color: transparent;
+      background-color: $color-main;
       border: dotted 1px #000;
       margin: .25em 0;
       padding: .25em 0;
 
       &::after{
-        font-family: "icomoon";
-        content:"\ea13";
+        content:"Ver";
         float: right;
+        font-family: $font-main;
+        font-size: .75em;
+        background-color: $color-link;
+        color: $color-secundary;
+        padding: .28em;
         margin-right: .25em;
+        @include vendors (border-radius, 50px);
       }
 }
 
@@ -84,23 +100,24 @@
 .h3__title__modified{
     font-family: $font-secundary;
     font-size: $font-h3*1.2;
-    color: $color-secundary;
+    color: $color-link;
     text-align: center;
     background-color: $color-headers;
-    border-bottom: dotted 2px $blue;
-    border-top: dotted 2px $blue;
+    border-bottom: solid 10px $color-complementary;
+    border-top: solid 10px $color-complementary;
     padding: .25em 0;
     margin-top: .25em;
 }
 
 .h4__title__modified {
-  text-align: left;
+  text-align: center;
   padding-left: .25em;
   padding-bottom: .25em;
   padding-top: .25em;
+  margin-bottom: .5em;
   background-color: $color-main;
   color: $color-link;
-  font-size: $font-h4;
+  font-size: $font-h5;
 }
 
 
@@ -112,6 +129,10 @@
       font-size: $font-h2;
   }
 
+  .h4__title__modified{
+      font-size: $font-h4;
+  }
+
 }
 
 @media all and (min-width: 1024px){
@@ -119,5 +140,6 @@
  .h3__title__modified{
       font-size: $font-h1;
   }
+
 
 }

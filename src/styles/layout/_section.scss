@@ -11,14 +11,12 @@
         flex-direction: row;
     }
 
-    .insection--main--one{
-        width: 50%;
-        margin-right: 10px;
-    }
-
+    .insection--main--one,
     .insection--main--two{
         width: 50%;
-        margin-left: 10px;
+        margin-right: 10px;
+        background-color: $color-complementary;
     }
+
 
 }

@@ -4,7 +4,7 @@
 //WITGETS
 
 .witgets-items{
-    background-color:$color-main;
+    background-color:$color-secundary;
     text-align: center;
     margin-top: .5em;
     padding-top: .5em;
@@ -52,7 +52,8 @@
     .icon-phone,
     .icon-wordpress2{
         font-size: $font-h1;
-        color: $color-headers;cursor: pointer;
+        color: $color-link;
+        cursor: pointer;
     }
 
     .icon-files-empty{
@@ -78,7 +79,7 @@
         margin: 0 .25em;
         background-color: $color-secundary;
         font-size: $font-h3;
-        color: $blue;
+        color: $color-link;
         border: dotted 3px $color-headers;
         @include vendors(border-radius, 50px);
     }
@@ -89,7 +90,7 @@
         .icon-mobile2,
         .icon-calendar{
             font-size: $font-h4;
-            color : $color-headers;
+            color : $color-link;
             vertical-align: middle;
         }
 
@@ -118,6 +119,16 @@
 
 
 //EXTRA ICONS
+
+.extra--icons{
+    display: block;
+    width: 100%;
+    border-bottom: solid 2px $color-main;
+    margin: .5em 0;
+    padding: .5em 0;
+    background-color: $color-main;
+}
+
     .icon-clock,
     .icon-location{
         font-size: $font-h4;
@@ -126,3 +137,12 @@
     }
 
 
+ @media all and (min-width: 600px){
+    .extra--icons{
+        display: flex;
+        width: 50%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}

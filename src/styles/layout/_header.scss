@@ -9,17 +9,17 @@
         background-color: transparent;
     }
 
-//CONTACT-ITEMS
+//CONTACT-DATES
 
 .contact-dates{
     display: flex;
     flex-direction: column;
     margin: .1em 0;
     @extend %text-center;
-    background-color: $color-main;
+    background-color: $color-complementary;
 }
     .dates{
-        background-color: $color-main;
+        background-color: $color-complementary;
         color: $color-headers;
         line-height: 1.5em;
         padding: 5px 0;

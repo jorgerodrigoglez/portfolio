@@ -14,8 +14,8 @@
         .main--nav--list--item{
             width: 95%;
             @extend %center;
-            background-color: $color-main;
-            font-size: $font-h4;
+            background-color: $color-complementary;
+            font-size: $font-h3;
             font-family: $font-main;
             text-align: center;
             text-shadow: 2px 1px 3px;
@@ -48,11 +48,11 @@
             .main--nav--list--item{
                 display: table;
                 width: 30%;
-                font-size: $font-h4;
+                font-size: $font-h3;
                 text-align: center;
                 background-color: $color-secundary;
                 border-left: none;
-                border: solid 5px $color-main;
+                border: solid 5px $color-complementary;
                 padding: 0;
                 margin-top: 0;
                 margin-bottom: .5em;
@@ -74,7 +74,7 @@
     }
 
        .main--nav--list--item{
-            font-size: $font-h3;
+            font-size: $font-h2;
             width: 30%;
             padding: .25em;
     }

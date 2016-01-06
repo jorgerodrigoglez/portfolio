@@ -12,21 +12,6 @@
         var btnCookies = document.getElementById('btnCookies');
         var panelCookies = document.getElementById('panelCookies');
 
-    /*hammer*/
-
-        var hammerPanel = new Hammer(mainPanel);
-        var hammerSide = new Hammer(sidePanel);
-
-        var hammerContactPanel = new Hammer(mainContactPanel);
-        var hammerContactSide = new Hammer(sideContactPanel);
-
-        var hammerBlock = new Hammer(btnBlock);
-
-
-      /* Navegador Mobile */
-        hammerPanel.on('swiperight', onSwipe);
-        hammerPanel.on('swiperight', onSwipeContact);
-        hammerPanel.on('swiperight', offBlock);
 
       /* Navegador Desktop */
         mainPanel.addEventListener('click', onSwipe);

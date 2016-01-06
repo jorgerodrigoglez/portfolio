@@ -95,12 +95,13 @@ h6 {
 .btn--list--item {
   font-size: 1.5em;
   font-family: "Quicksand", serif;
-  background-color: rgba(175, 238, 238, 0.7);
+  background-color: rgba(0, 191, 255, 0.5);
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
   border-radius: 40px;
+  border: solid 2px darkblue;
   padding: .75em;
   margin: .25em 0; }
 
@@ -123,8 +124,8 @@ h6 {
 
 .main--nav--list--item {
   width: 95%;
-  background-color: rgba(175, 238, 238, 0.7);
-  font-size: 2em;
+  background-color: rgba(0, 191, 255, 0.5);
+  font-size: 2.5em;
   font-family: "Cuprum", sans-serif;
   text-align: center;
   text-shadow: 2px 1px 3px;
@@ -153,11 +154,11 @@ h6 {
   .main--nav--list--item {
     display: table;
     width: 30%;
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
     background-color: rgba(224, 255, 255, 0.7);
     border-left: none;
-    border: solid 5px rgba(175, 238, 238, 0.7);
+    border: solid 5px rgba(0, 191, 255, 0.5);
     padding: 0;
     margin-top: 0;
     margin-bottom: .5em;
@@ -176,17 +177,17 @@ h6 {
     flex-direction: row;
     justify-content: space-around; }
   .main--nav--list--item {
-    font-size: 2.5em;
+    font-size: 3em;
     width: 30%;
     padding: .25em; } }
 
 /*SLIDES*/
 .off-canvas-chat {
-  background-color: rgba(175, 238, 238, 0.7);
+  background-color: rgba(250, 128, 128, 0.7);
   position: absolute;
-  top: 14em;
+  top: 14.5em;
   left: 0;
-  height: 400px;
+  height: 410px;
   width: 100%;
   color: darkblue;
   transition: transform .3s ease-out;
@@ -196,11 +197,11 @@ h6 {
   z-index: 1; }
 
 .off-canvas-contact {
-  background-color: rgba(175, 238, 238, 0.7);
+  background-color: rgba(250, 128, 128, 0.7);
   position: absolute;
-  top: 14em;
+  top: 14.5em;
   left: 0;
-  height: 400px;
+  height: 410px;
   width: 100%;
   color: darkblue;
   transition: transform .3s ease-out;
@@ -211,7 +212,7 @@ h6 {
 @media all and (min-width: 768px) {
   .off-canvas-chat,
   .off-canvas-contact {
-    top: 16em; } }
+    top: 17em; } }
 
 .off-canvas-chat.open-chat-panel {
   transform: translate(0, 0);
@@ -296,7 +297,7 @@ h6 {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: rgba(175, 238, 238, 0.7);
+  background-color: rgba(250, 128, 128, 0.7);
   max-width: 1220px;
   padding: 1em 0;
   margin: 1em 0; }
@@ -308,7 +309,7 @@ h6 {
 .icon-instagram,
 .icon-pinterest {
   font-size: 3em;
-  color: rgba(123, 104, 238, 0.7);
+  color: darkblue;
   padding: 0 .1em; }
 
 @media all and (min-width: 600px) {
@@ -351,21 +352,6 @@ h6 {
     margin: 0;
     padding: 0; } }
 
-.extra--icons {
-  display: block;
-  width: 100%;
-  border-bottom: solid 2px rgba(175, 238, 238, 0.7);
-  margin: .5em 0;
-  padding: .5em 0;
-  background-color: rgba(175, 238, 238, 0.7); }
-
-@media all and (min-width: 600px) {
-  .extra--icons {
-    display: flex;
-    width: 50%;
-    flex-direction: row;
-    justify-content: space-around; } }
-
 /*LISTS-ITEMS*/
 .section--list {
   background-color: rgba(224, 255, 255, 0.7);
@@ -378,11 +364,11 @@ h6 {
   font-family: serif, arial;
   font-size: 1.5em;
   text-transform: uppercase;
-  background-color: rgba(175, 238, 238, 0.7);
+  background-color: rgba(224, 255, 255, 0.7);
   margin: .25em 0;
   padding: .25em 0; }
   .section--list--item::before {
-    background-color: rgba(224, 255, 255, 0.7);
+    background-color: rgba(250, 128, 128, 0.7);
     content: "";
     margin-left: .5em;
     margin-right: .5em;
@@ -400,18 +386,18 @@ h6 {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: rgba(224, 255, 255, 0.7);
+  background-color: rgba(0, 191, 255, 0.5);
   margin-top: .5em;
   margin-bottom: .5em; }
 
 .section--list--footer--item {
   font-size: 2em;
   font-family: "Cuprum", sans-serif;
-  background-color: rgba(123, 104, 238, 0.7);
+  background-color: rgba(0, 191, 255, 0.5);
   padding: .5em;
   margin-right: .2em; }
   .section--list--footer--item:before {
-    background-color: rgba(123, 104, 238, 0.7);
+    background-color: rgba(0, 191, 255, 0.5);
     font-family: 'icomoon';
     content: "\e9b6";
     padding: .25em;
@@ -428,14 +414,13 @@ h6 {
   flex-direction: row;
   justify-content: flex-end;
   flex-wrap: wrap;
-  background-color: rgba(123, 104, 238, 0.7);
-  border-top: dashed 2px rgba(65, 105, 225, 0.7);
+  background-color: rgba(250, 128, 128, 0.7);
+  border-top: dotted 10px rgba(65, 105, 225, 0.7);
   margin-top: .1em;
   padding: .75em 0; }
 
 .footer--section--item__a,
 .footer--section--item__b {
-  background-color: transparent;
   font-size: 2em;
   text-transform: uppercase;
   font-family: "Cuprum", sans-serif;
@@ -443,9 +428,9 @@ h6 {
   margin: .25em; }
 
 .footer--section--item__a a {
-  background-color: rgba(224, 255, 255, 0.7);
-  color: rgba(178, 34, 34, 0.7);
-  border: solid 3px rgba(123, 104, 238, 0.7);
+  background-color: rgba(65, 105, 225, 0.7);
+  color: rgba(224, 255, 255, 0.7);
+  border: solid 5px rgba(0, 191, 255, 0.5);
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
@@ -457,12 +442,12 @@ h6 {
     content: "\eab7";
     margin-right: .25em;
     padding: .25em;
-    color: rgba(65, 105, 225, 0.7); }
+    color: black; }
 
 .footer--section--item__b a {
-  background-color: rgba(224, 255, 255, 0.7);
-  color: rgba(178, 34, 34, 0.7);
-  border: solid 3px rgba(123, 104, 238, 0.7);
+  background-color: rgba(65, 105, 225, 0.7);
+  color: rgba(224, 255, 255, 0.7);
+  border: solid 5px rgba(0, 191, 255, 0.5);
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
@@ -474,7 +459,7 @@ h6 {
     content: "\e90e";
     padding: .25em;
     margin-right: .25em;
-    color: rgba(65, 105, 225, 0.7); }
+    color: black; }
 
 /*TITLES*/
 .h1 {
@@ -482,8 +467,8 @@ h6 {
   padding: .25em; }
 
 .h2--slogan {
-  background-color: rgba(175, 238, 238, 0.7);
-  color: rgba(123, 104, 238, 0.7);
+  background-color: rgba(0, 191, 255, 0.5);
+  color: darkblue;
   text-align: center;
   font-size: 2.5em;
   font-family: "Quicksand", serif; }
@@ -501,56 +486,73 @@ h6 {
   .h2--slogan {
     font-size: 3em; }
   .h3--slogan {
-    font-size: 1.5em; } }
+    font-size: 2em; } }
+
+@media all and (min-width: 1024px) {
+  .h2--slogan {
+    font-size: 3.5em; } }
 
 .h3__title {
   font-family: "Cuprum", sans-serif;
   font-size: 3.5em;
-  color: rgba(65, 105, 225, 0.7);
+  color: black;
   text-align: center;
-  background-color: rgba(224, 255, 255, 0.7);
+  background-color: rgba(0, 191, 255, 0.5);
   border-bottom: solid 2px rgba(65, 105, 225, 0.7);
-  border-top: solid 2px rgba(65, 105, 225, 0.7); }
+  border-top: solid 8px darkblue;
+  border-bottom: solid 8px darkblue; }
 
 .h4__title {
-  font-family: serif, arial;
+  font-family: "Cuprum", sans-serif;
   font-size: 2.5em;
   text-align: center;
   font-weight: bold;
   color: #000;
-  background-color: transparent;
+  background-color: rgba(250, 128, 128, 0.7);
   border: dotted 1px #000;
   margin: .25em 0;
   padding: .25em 0; }
   .h4__title::after {
-    font-family: "icomoon";
-    content: "\ea13";
+    content: "Ver";
     float: right;
-    margin-right: .25em; }
+    font-family: "Cuprum", sans-serif;
+    font-size: .75em;
+    background-color: darkblue;
+    color: rgba(224, 255, 255, 0.7);
+    padding: .28em;
+    margin-right: .25em;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px; }
 
 .h3__title__modified {
   font-family: "Quicksand", serif;
   font-size: 3em;
-  color: rgba(224, 255, 255, 0.7);
+  color: darkblue;
   text-align: center;
   background-color: rgba(123, 104, 238, 0.7);
-  border-bottom: dotted 2px rgba(65, 105, 225, 0.7);
-  border-top: dotted 2px rgba(65, 105, 225, 0.7);
+  border-bottom: solid 10px rgba(0, 191, 255, 0.5);
+  border-top: solid 10px rgba(0, 191, 255, 0.5);
   padding: .25em 0;
   margin-top: .25em; }
 
 .h4__title__modified {
-  text-align: left;
+  text-align: center;
   padding-left: .25em;
   padding-bottom: .25em;
   padding-top: .25em;
-  background-color: rgba(175, 238, 238, 0.7);
+  margin-bottom: .5em;
+  background-color: rgba(250, 128, 128, 0.7);
   color: darkblue;
-  font-size: 2em; }
+  font-size: 1.5em; }
 
 @media all and (min-width: 768px) {
   .h3__title__modified {
-    font-size: 3em; } }
+    font-size: 3em; }
+  .h4__title__modified {
+    font-size: 2em; } }
 
 @media all and (min-width: 1024px) {
   .h3__title__modified {
@@ -558,7 +560,7 @@ h6 {
 
 /*ICONS*/
 .witgets-items {
-  background-color: rgba(175, 238, 238, 0.7);
+  background-color: rgba(224, 255, 255, 0.7);
   text-align: center;
   margin-top: .5em;
   padding-top: .5em;
@@ -585,7 +587,7 @@ h6 {
 .call-to-action {
   padding: .25em;
   font-weight: bold;
-  color: rgba(175, 238, 238, 0.7);
+  color: rgba(250, 128, 128, 0.7);
   border-radius: 20px;
   cursor: pointer; }
 
@@ -593,7 +595,7 @@ h6 {
 .icon-phone,
 .icon-wordpress2 {
   font-size: 3.5em;
-  color: rgba(123, 104, 238, 0.7);
+  color: darkblue;
   cursor: pointer; }
 
 .icon-files-empty {
@@ -610,7 +612,7 @@ h6 {
   margin: 0 .25em;
   background-color: rgba(224, 255, 255, 0.7);
   font-size: 2.5em;
-  color: rgba(65, 105, 225, 0.7);
+  color: darkblue;
   border: dotted 3px rgba(123, 104, 238, 0.7);
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -622,7 +624,7 @@ h6 {
 .icon-mobile2,
 .icon-calendar {
   font-size: 2em;
-  color: rgba(123, 104, 238, 0.7);
+  color: darkblue;
   vertical-align: middle; }
 
 .icon-skype {
@@ -639,11 +641,26 @@ h6 {
   .icon-mobile2 {
     display: flex; } }
 
+.extra--icons {
+  display: block;
+  width: 100%;
+  border-bottom: solid 2px rgba(250, 128, 128, 0.7);
+  margin: .5em 0;
+  padding: .5em 0;
+  background-color: rgba(250, 128, 128, 0.7); }
+
 .icon-clock,
 .icon-location {
   font-size: 2em;
   padding: 0 .25em;
   color: darkblue; }
+
+@media all and (min-width: 600px) {
+  .extra--icons {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-around; } }
 
 /*BARS-SKILLS*/
 .bars--list--items {
@@ -667,7 +684,7 @@ h6 {
   display: table-cell;
   width: 50px;
   font-size: 1.5em;
-  background-color: rgba(175, 238, 238, 0.7); }
+  background-color: rgba(250, 128, 128, 0.7); }
 
 .count {
   width: 10%;
@@ -783,7 +800,7 @@ article {
   font-size: 1.25em;
   font-family: "Cuprum", sans-serif;
   text-align: center;
-  background-color: rgba(175, 238, 238, 0.7);
+  background-color: rgba(224, 255, 255, 0.7);
   margin-top: 1em; }
 
 /*TOP HEADER*/
@@ -797,10 +814,10 @@ article {
   display: flex;
   flex-direction: column;
   margin: .1em 0;
-  background-color: rgba(175, 238, 238, 0.7); }
+  background-color: rgba(0, 191, 255, 0.5); }
 
 .dates {
-  background-color: rgba(175, 238, 238, 0.7);
+  background-color: rgba(0, 191, 255, 0.5);
   color: rgba(123, 104, 238, 0.7);
   line-height: 1.5em;
   padding: 5px 0; }
@@ -816,12 +833,11 @@ article {
     display: flex;
     justify-content: space-between;
     flex-direction: row; }
-  .insection--main--one {
-    width: 50%;
-    margin-right: 10px; }
+  .insection--main--one,
   .insection--main--two {
     width: 50%;
-    margin-left: 10px; } }
+    margin-right: 10px;
+    background-color: rgba(0, 191, 255, 0.5); } }
 
 /*PRIMARY FOOTER*/
 .primary-footer {
@@ -829,7 +845,7 @@ article {
   width: 100%;
   table-layout: fixed;
   text-align: center;
-  background-color: rgba(175, 238, 238, 0.7);
+  background-color: rgba(0, 191, 255, 0.5);
   padding: 1.5em;
   margin-top: 1.5em; }
 

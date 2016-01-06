@@ -12,8 +12,9 @@
     .btn--list--item{
         font-size: $font-h5;
         font-family: $font-secundary;
-        background-color: $color-main;
+        background-color: $color-complementary;
         @include vendors (border-radius, 40px);
+        border : solid 2px $color-link;
         padding: .75em;
         margin: .25em 0;
 

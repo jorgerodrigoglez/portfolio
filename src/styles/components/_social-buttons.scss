@@ -17,7 +17,7 @@
     .icon-instagram,
     .icon-pinterest {
         font-size: $font-h2;
-        color: $color-headers;
+        color: $color-link;
         padding: 0 .1em;
     }
 
@@ -79,25 +79,4 @@
 
 }
 
-//EXTRA ICONS
 
-.extra--icons{
-    display: block;
-    width: 100%;
-    border-bottom: solid 2px $color-main;
-    margin: .5em 0;
-    padding: .5em 0;
-    background-color: $color-main;
-}
-
-
-
- @media all and (min-width: 600px){
-    .extra--icons{
-        display: flex;
-        width: 50%;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-}
