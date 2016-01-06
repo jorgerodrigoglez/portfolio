@@ -5,7 +5,7 @@
 .off-canvas-chat {
   background-color: $color-main;
   position:absolute;
-  top: 14.5em;
+  top: 13.5em;
   left: 0;
   height: 410px;
   width: 100%;
@@ -22,7 +22,7 @@
 .off-canvas-contact {
   background-color: $color-main;
   position:absolute;
-  top: 14.5em;
+  top: 13.5em;
   left: 0;
   height: 410px;
   width: 100%;
@@ -40,7 +40,7 @@
 @media all and (min-width: 768px){
     .off-canvas-chat,
     .off-canvas-contact{
-        top:17em;
+        top:17.5em;
     }
 }
 

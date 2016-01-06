@@ -4,19 +4,21 @@
         font-size: $font-h6;
         text-align: center;
         font-family: $font-main;
-        border-top: dotted 1px #000;
-        border-bottom: dotted 1px #000;
+        border-top: dotted 3px $color-link;
+        border-bottom: dotted 3px $color-link;
         margin-bottom: .5em;
 
     }
 
   .description--text__section{
-        width: 100%;
-        font-size: $font-h6;
+        width: 90%;
+        @extend %center;
+        font-size: $font-h5;
         text-align: center;
         font-family: $font-main;
-        border-top: solid 3px $color-headers;
-        border-bottom: solid 3px $color-headers;
+        border-top: solid 3px $color-complementary;
+        border-bottom: solid 3px $color-complementary;
+        margin-bottom: .25em;
     }
 
 
@@ -27,6 +29,7 @@
         font-size: $font-h5;
     }
 
+
 }
 
 @media all and (min-width: 768px){
@@ -34,9 +37,6 @@
         font-size: $font-h5*1.1;
     }
 
-    .description--text__section{
-        font-size: $font-h6*1.1;
-    }
 
 }
 

@@ -1,4 +1,16 @@
 /*ICONS*/
+//BTN-GO-BACK
+
+.icon-home{
+    position: fixed;
+    top: .2em;
+    left: .2em;
+    width: 75px;
+    text-align: center;
+    background-color: $color-complementary;
+    color: $color-link;
+    font-size: $font-h2;
+}
 
 
 //WITGETS
@@ -49,8 +61,7 @@
     }
 
     .icon-files-empty,
-    .icon-phone,
-    .icon-wordpress2{
+    .icon-phone {
         font-size: $font-h1;
         color: $color-link;
         cursor: pointer;
@@ -80,7 +91,7 @@
         background-color: $color-secundary;
         font-size: $font-h3;
         color: $color-link;
-        border: dotted 3px $color-headers;
+        border: dotted 8px $color-headers;
         @include vendors(border-radius, 50px);
     }
 

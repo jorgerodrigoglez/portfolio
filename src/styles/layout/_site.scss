@@ -25,7 +25,7 @@ li{
 
 article{
     width: 100%;
-    padding: 1em;
+    padding: .25em;
     @extend %center;
 }
 
@@ -38,6 +38,28 @@ article{
   text-align: center;
   background-color: $color-secundary;
   margin-top: 1em;
+}
+
+//TITLES PAGES
+
+.font--titles--pages__top{
+  font-size: $font-h2;
+  background-color: $color-secundary;
+  border-bottom: double 10px;
+}
+
+
+.font--titles--pages__bottom{
+  font-size: $font-h3;
+  background-color: $color-secundary;
+  text-align: left;
+  padding-left: .5em;
+}
+
+//BTNS_SMALL_SIZE
+
+.btn__small__size{
+  font-size: $font-h6;
 }
 
 

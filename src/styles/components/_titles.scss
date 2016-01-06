@@ -3,19 +3,38 @@
 //MAIN TITLES
 
 .h1{
-    font-size: $font-h2;
+    font-size: $font-h3;
     padding: .25em;
-
   }
 
 
 .h2--slogan {
     background-color: $color-complementary;
     color: $color-link;
-    text-align: center;  ;
-    font-size: $font-h3;
+    text-align: center;
+    font-size: $font-h4;
     font-family: $font-secundary;
+    display: table;
+    width: 100%;
+    padding-left: 2em;
 }
+
+    .blog{
+        background-color: $color-complementary;
+        float: right;
+        font-family: $font-main;
+        background-color: $color-complementary;
+        color: $color-secundary;
+        font-size: $font-h6/1.75;
+        display: table-cell;
+        margin: .25em;
+        padding: .15em;
+
+        &::before{
+          font-family: "icomoon";
+          content: " \eab7";
+        }
+    }
 
 .h3--slogan{
     background-color: $color-secundary;
@@ -60,10 +79,11 @@
     font-size: $font-h1;
     color: $black;
     text-align: center;
-    background-color: $color-complementary;
+    background-color: $color-main;
     border-bottom: solid 2px $blue;
-    border-top: solid 8px $color-link;
-    border-bottom: solid 8px $color-link;
+    border-top: solid 3px $color-link;
+    border-bottom: solid 3px $color-link;
+    padding: .35em 0;
 }
 
 
@@ -98,26 +118,29 @@
 //TITLES MODIFIED
 
 .h3__title__modified{
-    font-family: $font-secundary;
+    font-family: $font-main;
     font-size: $font-h3*1.2;
-    color: $color-link;
+    color: $black;
     text-align: center;
     background-color: $color-headers;
-    border-bottom: solid 10px $color-complementary;
-    border-top: solid 10px $color-complementary;
+    border-bottom: solid 5px $color-headers;
+    border-top: solid 5px $color-main;
     padding: .25em 0;
-    margin-top: .25em;
+    margin-top: .1em;
+    margin-bottom: .1em;
 }
 
 .h4__title__modified {
+  font-family: $font-secundary;
   text-align: center;
+  font-size: $font-h5;
+  color: $color-link;
   padding-left: .25em;
   padding-bottom: .25em;
   padding-top: .25em;
-  margin-bottom: .5em;
-  background-color: $color-main;
-  color: $color-link;
-  font-size: $font-h5;
+  margin-bottom: .15em;
+  margin-top: .15em;
+  background-color: $color-complementary;
 }
 
 

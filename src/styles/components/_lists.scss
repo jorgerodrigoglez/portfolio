@@ -2,10 +2,9 @@
 
     .section--list{
         background-color: $color-secundary;
-        width: 90%;
+        width: 95%;
+        @extend %center;
         text-align: left;
-        margin-left: $gutterwidth;
-        margin-right: $gutterwidth;
     }
 
         .section--list--item{
@@ -25,6 +24,34 @@
                     @include vendors (border-radius, 50%);
                 }
         }
+
+/*SUBLIST-ITEM*/
+
+    .section--sublist--item{
+        background-color: $color-complementary;
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-top: .5em;
+    }
+
+        .section--sublist--items{
+            list-style-type: circle;
+            padding: .25em 0;
+            font-size: $font-h5;
+            font-family: $font-main;
+            font-weight: normal;
+            color: $color-headers;
+            background-color: $color-complementary;
+            margin-left: 1.5em;
+            padding-left : .5em;
+
+        }
+
+            .section--sublist--items a{
+                color : $black;
+                text-decoration: underline;
+            }
+
 
 /*LISTS-FOOTER-LINKS*/
 
@@ -117,3 +144,21 @@
                     color: $black;
                 }
         }
+
+//MSDIA-QUERIES
+
+ @media all and (min-width: 768px){
+    .footer--section--item__a,
+    .footer--section--item__b{
+        font-size: $font-h5*1.2;
+    }
+
+}
+
+    @media all and (min-width: 1024px){
+        .footer--section--item__a,
+        .footer--section--item__b{
+            font-size: $font-h4;
+        }
+
+}
