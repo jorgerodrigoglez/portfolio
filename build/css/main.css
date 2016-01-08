@@ -28,7 +28,7 @@ h6 {
 /*prefijos*/
 /*Clearfix*/
 /*center*/
-.description--text__section, .main--nav--list--item, .section--list, body, article, .main--header {
+.main--nav--list--item, body, article, .main--header, .wrapper--main--section {
   margin-left: auto;
   margin-right: auto; }
 
@@ -67,13 +67,13 @@ h6 {
   margin-bottom: .5em; }
 
 .description--text__section {
-  width: 90%;
+  width: 100%;
   font-size: 1.5em;
   text-align: center;
   font-family: "Cuprum", sans-serif;
   border-top: solid 3px rgba(0, 191, 255, 0.5);
   border-bottom: solid 3px rgba(0, 191, 255, 0.5);
-  margin-bottom: .25em; }
+  margin-bottom: .5em; }
 
 @media all and (min-width: 600px) {
   .description--text {
@@ -206,7 +206,7 @@ h6 {
   transition: transform .3s ease-out;
   -webkit-transition: -webkit-transform .3s ease-out;
   transform: translate(-100%, 0);
-  -webkit-transform: translate -100%, 0; }
+  -webkit-transform: translate(-100%, 0); }
 
 @media all and (min-width: 768px) {
   .off-canvas-chat,
@@ -252,40 +252,37 @@ h6 {
   margin-right: .5em; }
 
 .cookies {
-  display: flex;
-  flex-direction: column;
-  max-width: 1220px;
-  position: relative;
-  bottom: .5em;
-  height: 10%;
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: .5em;
   background-color: rgba(224, 255, 255, 0.7);
   text-align: center;
-  z-index: 999;
+  z-index: 5;
   transform: translate(0, 0);
   -webkit-transform: translate(0, 0); }
 
 .cookies.remove-cookies-panel {
   transition: transform .3s ease-out;
   -webkit-transition: -webkit-transform .3s ease-out;
-  transform: translate(0, 0);
-  -webkit-transform: translate(0, 0); }
+  transform: translate(0, -120%);
+  -webkit-transform: translate(0, -120%); }
 
 .cookies-text {
+  display: block;
   background-color: #fff;
-  text-shadow: 1px 1px 1px;
   font-size: 1.5em;
   font-family: "Cuprum", sans-serif;
-  padding: 1em 0;
+  padding: 0;
   color: #000; }
 
 .cookies-link {
+  display: block;
   background-color: rgba(123, 104, 238, 0.7);
-  text-shadow: 1px 1px 1px;
-  color: darkblue;
+  color: #ffffff;
   font-size: 2em;
   line-height: .1em;
   padding: 1em;
@@ -296,7 +293,7 @@ h6 {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: rgba(250, 128, 128, 0.7);
+  background-color: rgba(0, 191, 255, 0.5);
   max-width: 1220px;
   padding: 1em 0;
   margin: 1em 0; }
@@ -354,8 +351,8 @@ h6 {
 /*LISTS-ITEMS*/
 .section--list {
   background-color: rgba(224, 255, 255, 0.7);
-  width: 95%;
-  text-align: left; }
+  text-align: left;
+  width: 100%; }
 
 .section--list--item {
   font-family: serif, arial;
@@ -381,7 +378,8 @@ h6 {
   background-color: rgba(0, 191, 255, 0.5);
   margin-left: 2em;
   margin-right: 2em;
-  margin-top: .5em; }
+  margin-top: .5em;
+  margin-bottom: .5em; }
 
 .section--sublist--items {
   list-style-type: circle;
@@ -505,7 +503,7 @@ h6 {
   width: 100%;
   padding-left: 2em; }
 
-.blog {
+.nav--pages {
   background-color: rgba(0, 191, 255, 0.5);
   float: right;
   font-family: "Cuprum", sans-serif;
@@ -515,9 +513,6 @@ h6 {
   display: table-cell;
   margin: .25em;
   padding: .15em; }
-  .blog::before {
-    font-family: "icomoon";
-    content: " \eab7"; }
 
 .h3--slogan {
   background-color: rgba(224, 255, 255, 0.7);
@@ -543,7 +538,8 @@ h6 {
   font-size: 3.5em;
   color: black;
   text-align: center;
-  background-color: rgba(250, 128, 128, 0.7);
+  text-shadow: 2px 1px 3px;
+  background-color: rgba(123, 104, 238, 0.7);
   border-bottom: solid 2px rgba(65, 105, 225, 0.7);
   border-top: solid 3px darkblue;
   border-bottom: solid 3px darkblue;
@@ -623,8 +619,7 @@ h6 {
   background-color: rgba(224, 255, 255, 0.7);
   text-align: center;
   margin-top: .5em;
-  padding-top: .5em;
-  display: none; }
+  padding-top: .5em; }
 
 .witgets-list-item {
   font-size: 2em; }
@@ -657,14 +652,11 @@ h6 {
   color: darkblue;
   cursor: pointer; }
 
-.icon-files-empty {
-  display: none; }
-
 @media all and (min-width: 600px) {
   .icon-files-empty {
     display: flex; } }
 
-.icon-star,
+.icon-bubble,
 .icon-like,
 .icon-share2 {
   padding: .25em;
@@ -706,7 +698,7 @@ h6 {
   border-bottom: solid 2px rgba(250, 128, 128, 0.7);
   margin: .5em 0;
   padding: .5em 0;
-  background-color: rgba(250, 128, 128, 0.7); }
+  background-color: rgba(0, 191, 255, 0.5); }
 
 .icon-clock,
 .icon-location {
@@ -724,7 +716,8 @@ h6 {
 /*BARS-SKILLS*/
 .bars--list--items {
   background-color: rgba(224, 255, 255, 0.7);
-  margin-left: 0; }
+  margin-left: 0;
+  width: 100%; }
 
 .bars--title {
   margin: .25em 0;
@@ -742,37 +735,43 @@ h6 {
 .bar--sublist--title--item {
   display: table-cell;
   width: 50px;
-  font-size: 1.5em;
-  background-color: rgba(250, 128, 128, 0.7); }
+  font-size: 1.25em;
+  background-color: darkblue;
+  color: rgba(224, 255, 255, 0.7);
+  padding-left: 1.5em; }
+  .bar--sublist--title--item::before {
+    font-family: "icomoon";
+    content: "\ea10";
+    padding-right: .25em; }
 
 .count {
   width: 10%;
-  background-color: rgba(65, 105, 225, 0.7);
+  background-color: rgba(123, 104, 238, 0.7);
   display: table-cell; }
 
 .count0 {
   width: 20%;
-  background-color: rgba(65, 105, 225, 0.7);
+  background-color: rgba(123, 104, 238, 0.7);
   display: table-cell; }
 
 .count1 {
   width: 30%;
-  background-color: rgba(65, 105, 225, 0.7);
+  background-color: rgba(123, 104, 238, 0.7);
   display: table-cell; }
 
 .count2 {
   width: 40%;
-  background-color: rgba(65, 105, 225, 0.7);
+  background-color: rgba(123, 104, 238, 0.7);
   display: table-cell; }
 
 .count3 {
   width: 50%;
-  background-color: rgba(65, 105, 225, 0.7);
+  background-color: rgba(123, 104, 238, 0.7);
   display: table-cell; }
 
 .count4 {
   width: 60%;
-  background-color: rgba(65, 105, 225, 0.7);
+  background-color: rgba(123, 104, 238, 0.7);
   display: table-cell; }
 
 .count::after {
@@ -799,12 +798,12 @@ h6 {
 .count2:after,
 .count3:after,
 .count4:after {
-  font-size: 1.5em;
+  font-size: 1.25em;
   float: right;
   margin-right: .2em;
   margin-top: .2em;
   font-weight: bold;
-  color: darkblue; }
+  color: rgba(224, 255, 255, 0.7); }
 
 /*LOGO & FOTO*/
 .wrapper-photos {
@@ -902,8 +901,9 @@ article {
 
 /*LAYOUT-SECTION*/
 .wrapper--main--section {
+  width: 100%;
   margin-bottom: 1em;
-  width: 100%; }
+  margin-top: .5em; }
 
 .insection--main--one {
   margin-bottom: .5em; }

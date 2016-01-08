@@ -2,9 +2,8 @@
 
     .section--list{
         background-color: $color-secundary;
-        width: 95%;
-        @extend %center;
         text-align: left;
+        width: 100%;
     }
 
         .section--list--item{
@@ -32,6 +31,7 @@
         margin-left: 2em;
         margin-right: 2em;
         margin-top: .5em;
+        margin-bottom: .5em;
     }
 
         .section--sublist--items{

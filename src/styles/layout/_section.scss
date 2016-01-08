@@ -1,7 +1,9 @@
  /*LAYOUT-SECTION*/
 .wrapper--main--section{
-        margin-bottom: 1em;
         width: 100%;
+        @extend %center;
+        margin-bottom: 1em;
+        margin-top: .5em;
     }
 
 .insection--main--one{

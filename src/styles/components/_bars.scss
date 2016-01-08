@@ -3,6 +3,7 @@
 .bars--list--items {
     background-color: $color-secundary;
     margin-left: 0;
+    width: 100%;
 }
 
 .bars--title {
@@ -26,45 +27,53 @@
         .bar--sublist--title--item{
                 display: table-cell;
                 width: 50px;
-                font-size: $font-h5;
-                background-color: $color-main;
+                font-size: $font-h6;
+                background-color: $color-link;
+                color: $color-secundary;
+                padding-left : $gutterwidth;
+
+                &::before{
+                    font-family: "icomoon";
+                    content : "\ea10";
+                    padding-right : .25em;
+                }
         }
 
             //Porcentaje-background
 
             .count {
                 width: 10%;
-                background-color: $blue;
+                background-color: $color-headers;
                 display: table-cell;
             }
 
             .count0 {
                 width: 20%;
-                background-color: $blue;
+                background-color: $color-headers;
                 display: table-cell;
             }
 
             .count1 {
                 width: 30%;
-                background-color: $blue;
+                background-color: $color-headers;
                 display: table-cell;
             }
 
             .count2 {
                 width: 40%;
-                background-color: $blue;
+                background-color: $color-headers;
                 display: table-cell;
             }
 
             .count3 {
                 width: 50%;
-                background-color: $blue;
+                background-color: $color-headers;
                 display: table-cell;
             }
 
             .count4 {
                 width: 60%;
-                background-color: $blue;
+                background-color: $color-headers;
                 display: table-cell;
             }
 
@@ -100,10 +109,10 @@
             .count2:after,
             .count3:after,
             .count4:after {
-                font-size: $font-h5;
+                font-size: $font-h6;
                 float: right;
                 margin-right: .2em;
                 margin-top: .2em;
                 font-weight: bold;
-                color: $color-link;
+                color: $color-secundary;
             }

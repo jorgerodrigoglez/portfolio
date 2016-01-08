@@ -11,14 +11,13 @@
     }
 
   .description--text__section{
-        width: 90%;
-        @extend %center;
+        width: 100%;
         font-size: $font-h5;
         text-align: center;
         font-family: $font-main;
         border-top: solid 3px $color-complementary;
         border-bottom: solid 3px $color-complementary;
-        margin-bottom: .25em;
+        margin-bottom: .5em;
     }
 
 

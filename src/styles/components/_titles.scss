@@ -19,7 +19,7 @@
     padding-left: 2em;
 }
 
-    .blog{
+    .nav--pages{
         background-color: $color-complementary;
         float: right;
         font-family: $font-main;
@@ -29,11 +29,6 @@
         display: table-cell;
         margin: .25em;
         padding: .15em;
-
-        &::before{
-          font-family: "icomoon";
-          content: " \eab7";
-        }
     }
 
 .h3--slogan{
@@ -79,7 +74,8 @@
     font-size: $font-h1;
     color: $black;
     text-align: center;
-    background-color: $color-main;
+    text-shadow: 2px 1px 3px;
+    background-color: $color-headers;
     border-bottom: solid 2px $blue;
     border-top: solid 3px $color-link;
     border-bottom: solid 3px $color-link;

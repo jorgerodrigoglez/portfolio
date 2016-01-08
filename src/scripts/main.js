@@ -13,7 +13,8 @@
         var panelCookies = document.getElementById('panelCookies');
 
 
-      /* Navegador Desktop */
+      //Navegador Desktop
+
         mainPanel.addEventListener('click', onSwipe);
         removePanel.addEventListener('click', removeSwipe);
 
@@ -21,6 +22,8 @@
         removeContactPanel.addEventListener('click', removeSwipeContact);
 
         btnCookies.addEventListener('click', removeCookies);
+
+    //FUNCTIONS
 
         function onSwipe() {
             sidePanel.classList.add('open-chat-panel');
@@ -43,7 +46,7 @@
 
         function removeCookies() {
             panelCookies.classList.toggle('remove-cookies-panel');
-      }
+        }
 
     });
 
