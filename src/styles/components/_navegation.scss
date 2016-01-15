@@ -26,7 +26,7 @@
         }
 
         .main--nav--list--item a{
-            background-color: $color-headers;
+            background-color: $color-secundary;
             padding: .5em 1.5em;
             margin-left: .5em;
             @include vendors(border-radius, 20px);
@@ -77,6 +77,26 @@
             font-size: $font-h2;
             width: 30%;
             padding: .25em;
+    }
+
+}
+
+//BLOG-
+
+.nav--pages{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: $color-secundary;
+    font-family: $font-main;
+    color: $color-complementary;
+    font-size: $font-h3;
+    margin-top: .25em;
+}
+
+@media all and (min-width: 768px){
+    .nav--pages{
+        font-size: $font-h1;
     }
 
 }

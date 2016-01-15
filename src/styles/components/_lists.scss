@@ -9,7 +9,6 @@
         .section--list--item{
             font-family: $font-default;
             font-size: $font-h5;
-            text-transform: uppercase;
             background-color: $color-secundary;
             margin: .25em 0;
             padding: .25em 0;
@@ -67,7 +66,7 @@
     }
 
         .section--list--footer--item{
-            font-size: $font-h4;
+            font-size: $font-h5;
             font-family: $font-main;
             background-color: $color-complementary;
             padding: .5em;

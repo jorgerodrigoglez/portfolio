@@ -32,9 +32,6 @@ h6 {
   margin-left: auto;
   margin-right: auto; }
 
-.contact-dates {
-  text-align: center; }
-
 /*TYPOGRAPHY*/
 .h1 {
   font-family: "Cuprum", sans-serif;
@@ -134,7 +131,7 @@ h6 {
   border-right: solid 10px rgba(123, 104, 238, 0.7); }
 
 .main--nav--list--item a {
-  background-color: rgba(123, 104, 238, 0.7);
+  background-color: rgba(224, 255, 255, 0.7);
   padding: .5em 1.5em;
   margin-left: .5em;
   -webkit-border-radius: 20px;
@@ -180,11 +177,25 @@ h6 {
     width: 30%;
     padding: .25em; } }
 
+.nav--pages {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(224, 255, 255, 0.7);
+  font-family: "Cuprum", sans-serif;
+  color: rgba(0, 191, 255, 0.5);
+  font-size: 2.5em;
+  margin-top: .25em; }
+
+@media all and (min-width: 768px) {
+  .nav--pages {
+    font-size: 3.5em; } }
+
 /*SLIDES*/
 .off-canvas-chat {
   background-color: rgba(250, 128, 128, 0.7);
   position: absolute;
-  top: 13.5em;
+  top: 14em;
   left: 0;
   height: 410px;
   width: 100%;
@@ -198,7 +209,7 @@ h6 {
 .off-canvas-contact {
   background-color: rgba(250, 128, 128, 0.7);
   position: absolute;
-  top: 13.5em;
+  top: 14em;
   left: 0;
   height: 410px;
   width: 100%;
@@ -211,7 +222,7 @@ h6 {
 @media all and (min-width: 768px) {
   .off-canvas-chat,
   .off-canvas-contact {
-    top: 17.5em; } }
+    top: 15em; } }
 
 .off-canvas-chat.open-chat-panel {
   transform: translate(0, 0);
@@ -357,7 +368,6 @@ h6 {
 .section--list--item {
   font-family: serif, arial;
   font-size: 1.5em;
-  text-transform: uppercase;
   background-color: rgba(224, 255, 255, 0.7);
   margin: .25em 0;
   padding: .25em 0; }
@@ -408,7 +418,7 @@ h6 {
   margin-bottom: .5em; }
 
 .section--list--footer--item {
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: "Cuprum", sans-serif;
   background-color: rgba(0, 191, 255, 0.5);
   padding: .5em;
@@ -497,29 +507,16 @@ h6 {
   background-color: rgba(0, 191, 255, 0.5);
   color: darkblue;
   text-align: center;
-  font-size: 2em;
+  font-size: 2.5em;
   font-family: "Quicksand", serif;
-  display: table;
-  width: 100%;
-  padding-left: 2em; }
-
-.nav--pages {
-  background-color: rgba(0, 191, 255, 0.5);
-  float: right;
-  font-family: "Cuprum", sans-serif;
-  background-color: rgba(0, 191, 255, 0.5);
-  color: rgba(224, 255, 255, 0.7);
-  font-size: 0.71429em;
-  display: table-cell;
-  margin: .25em;
-  padding: .15em; }
+  padding: .25em 0; }
 
 .h3--slogan {
   background-color: rgba(224, 255, 255, 0.7);
   font-size: 1.25em;
   font-family: "Quicksand", serif;
   text-align: center;
-  padding-bottom: .25em; }
+  padding: .5em 0; }
 
 @media all and (min-width: 768px) {
   .h1 {
@@ -528,10 +525,6 @@ h6 {
     font-size: 3em; }
   .h3--slogan {
     font-size: 2em; } }
-
-@media all and (min-width: 1024px) {
-  .h2--slogan {
-    font-size: 3.5em; } }
 
 .h3__title {
   font-family: "Cuprum", sans-serif;
@@ -555,20 +548,6 @@ h6 {
   border: dotted 1px #000;
   margin: .25em 0;
   padding: .25em 0; }
-  .h4__title::after {
-    content: "Ver";
-    float: right;
-    font-family: "Cuprum", sans-serif;
-    font-size: .75em;
-    background-color: darkblue;
-    color: rgba(224, 255, 255, 0.7);
-    padding: .28em;
-    margin-right: .25em;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    border-radius: 50px; }
 
 .h3__title__modified {
   font-family: "Cuprum", sans-serif;
@@ -647,13 +626,18 @@ h6 {
   cursor: pointer; }
 
 .icon-files-empty,
-.icon-phone {
+.icon-phone,
+.icon-bubbles {
   font-size: 3.5em;
   color: darkblue;
   cursor: pointer; }
 
+.icon-bubbles {
+  display: none; }
+
 @media all and (min-width: 600px) {
-  .icon-files-empty {
+  .icon-files-empty,
+  .icon-bubbles {
     display: flex; } }
 
 .icon-bubble,
@@ -664,7 +648,6 @@ h6 {
   background-color: rgba(224, 255, 255, 0.7);
   font-size: 2.5em;
   color: darkblue;
-  border: dotted 8px rgba(123, 104, 238, 0.7);
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
@@ -676,20 +659,16 @@ h6 {
 .icon-calendar {
   font-size: 2em;
   color: darkblue;
-  vertical-align: middle; }
-
-.icon-skype {
-  display: none; }
-
-.icon-mobile2 {
-  display: none; }
+  padding: .2em; }
 
 @media all and (min-width: 600px) {
   .icon-skype,
   .icon-mobile2,
   .icon-calendar {
-    font-size: 2.5em; }
-  .icon-mobile2 {
+    font-size: 2.5em;
+    padding: 0 1em; }
+  .icon-calendar,
+  .icon-skype {
     display: flex; } }
 
 .extra--icons {
@@ -698,11 +677,11 @@ h6 {
   border-bottom: solid 2px rgba(250, 128, 128, 0.7);
   margin: .5em 0;
   padding: .5em 0;
-  background-color: rgba(0, 191, 255, 0.5); }
+  background-color: rgba(224, 255, 255, 0.7); }
 
 .icon-clock,
 .icon-location {
-  font-size: 2em;
+  font-size: 2.5em;
   padding: 0 .25em;
   color: darkblue; }
 
@@ -859,7 +838,8 @@ article {
   font-family: "Cuprum", sans-serif;
   text-align: center;
   background-color: rgba(224, 255, 255, 0.7);
-  margin-top: 1em; }
+  margin-top: 1em;
+  display: none; }
 
 .font--titles--pages__top {
   font-size: 3em;
@@ -884,20 +864,15 @@ article {
 
 .contact-dates {
   display: flex;
-  flex-direction: column;
-  margin: .1em 0;
-  background-color: rgba(0, 191, 255, 0.5); }
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(224, 255, 255, 0.7);
+  margin-bottom: 2em; }
 
 .dates {
   background-color: rgba(0, 191, 255, 0.5);
-  color: rgba(123, 104, 238, 0.7);
   line-height: 1.5em;
   padding: 5px 0; }
-
-@media all and (min-width: 600px) {
-  .contact-dates {
-    flex-direction: row;
-    justify-content: space-around; } }
 
 /*LAYOUT-SECTION*/
 .wrapper--main--section {

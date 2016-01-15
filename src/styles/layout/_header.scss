@@ -13,25 +13,18 @@
 
 .contact-dates{
     display: flex;
-    flex-direction: column;
-    margin: .1em 0;
-    @extend %text-center;
-    background-color: $color-complementary;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $color-secundary;
+    margin-bottom: 2em;
 }
     .dates{
         background-color: $color-complementary;
-        color: $color-headers;
         line-height: 1.5em;
         padding: 5px 0;
     }
 
-@media all and (min-width: 600px){
-        .contact-dates{
-            flex-direction: row;
-            justify-content: space-around;
 
-        }
-}
 
 
 

@@ -12,32 +12,19 @@
     background-color: $color-complementary;
     color: $color-link;
     text-align: center;
-    font-size: $font-h4;
+    font-size: $font-h3;
     font-family: $font-secundary;
-    display: table;
-    width: 100%;
-    padding-left: 2em;
+    padding: .25em 0;
 }
-
-    .nav--pages{
-        background-color: $color-complementary;
-        float: right;
-        font-family: $font-main;
-        background-color: $color-complementary;
-        color: $color-secundary;
-        font-size: $font-h6/1.75;
-        display: table-cell;
-        margin: .25em;
-        padding: .15em;
-    }
 
 .h3--slogan{
     background-color: $color-secundary;
     font-size: $font-h6;
     font-family: $font-secundary;
     text-align: center;
-    padding-bottom: .25em;
+    padding: .5em 0;
 }
+
 
 //MEDIA QUERIES
 
@@ -53,14 +40,6 @@
 
     .h3--slogan{
       font-size: $font-h4;
-    }
-
-}
-
-@media all and (min-width: 1024px){
-
-    .h2--slogan{
-      font-size: $font-h1;
     }
 
 }
@@ -93,18 +72,6 @@
       border: dotted 1px #000;
       margin: .25em 0;
       padding: .25em 0;
-
-      &::after{
-        content:"Ver";
-        float: right;
-        font-family: $font-main;
-        font-size: .75em;
-        background-color: $color-link;
-        color: $color-secundary;
-        padding: .28em;
-        margin-right: .25em;
-        @include vendors (border-radius, 50px);
-      }
 }
 
 //MEDIA QUERIES
