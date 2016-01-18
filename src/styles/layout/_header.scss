@@ -8,15 +8,38 @@
     .main-header-infor{
         background-color: transparent;
     }
+//CONTACT-ICONS
+
+        .icon-skype,
+        .icon-mobile2,
+        .icon-calendar{
+            font-size: $font-h4;
+            color : $color-link;
+            padding: .2em;
+        }
+
+
+//MEDIA QUERIES
+
+@media all and (min-width: 600px){
+
+        .icon-skype,
+        .icon-mobile2,
+        .icon-calendar{
+            padding: 0 1em;
+        }
+
+}
+
 
 //CONTACT-DATES
 
 .contact-dates{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: $color-secundary;
-    margin-bottom: 2em;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $color-complementary;
+    margin-bottom: .25em;
 }
     .dates{
         background-color: $color-complementary;
@@ -25,6 +48,14 @@
     }
 
 
+//Media-Queries
 
+@media all and (min-width: 600px){
+    .contact-dates{
+        flex-direction: row;
+        justify-content: space-around;
+        }
+
+}
 
 

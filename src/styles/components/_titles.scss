@@ -19,7 +19,7 @@
 
 .h3--slogan{
     background-color: $color-secundary;
-    font-size: $font-h6;
+    font-size: $font-h4;
     font-family: $font-secundary;
     text-align: center;
     padding: .5em 0;
@@ -53,12 +53,21 @@
     font-size: $font-h1;
     color: $black;
     text-align: center;
-    text-shadow: 2px 1px 3px;
-    background-color: $color-headers;
+    text-shadow: 1px 1px 1px;
+    background-color: $color-secundary;
     border-bottom: solid 2px $blue;
     border-top: solid 3px $color-link;
     border-bottom: solid 3px $color-link;
     padding: .35em 0;
+}
+
+@media all and (min-width: 768px){
+  .h3__title{
+    @include vendors(border-radius, 50px);
+    display: block;
+  }
+
+
 }
 
 

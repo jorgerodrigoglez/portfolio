@@ -7,14 +7,14 @@
     }
 
         .section--list--item{
-            font-family: $font-default;
+            font-family: $font-main;
             font-size: $font-h5;
             background-color: $color-secundary;
             margin: .25em 0;
             padding: .25em 0;
 
                 &::before{
-                    background-color: $color-main;
+                    background-color: $color-link;
                     content : "";
                     margin-left: .5em;
                     margin-right: .5em;
@@ -40,7 +40,7 @@
             font-family: $font-main;
             font-weight: normal;
             color: $color-headers;
-            background-color: $color-complementary;
+            background-color: transparent;
             margin-left: 1.5em;
             padding-left : .5em;
 
@@ -58,7 +58,7 @@
         display: flex;
         width: 100%;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         flex-wrap : wrap;
         background-color: $color-complementary;
         margin-top: .5em;
@@ -66,19 +66,12 @@
     }
 
         .section--list--footer--item{
-            font-size: $font-h5;
+            font-size: $font-h6;
             font-family: $font-main;
             background-color: $color-complementary;
             padding: .5em;
             margin-right: .2em;
 
-                    &:before{
-                        background-color: $color-complementary;
-                        font-family: 'icomoon';
-                        content : "\e9b6";
-                        padding: .25em;
-                        margin-left: .1em;
-                    }
         }
 
 

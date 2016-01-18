@@ -5,9 +5,10 @@
     width: 100%;
     table-layout: fixed;
     text-align: center;
-    background-color: $color-complementary;
+    background-color: $color-link;
     padding: $gutterwidth;
     margin-top: $gutterwidth;
+    margin-bottom: $gutterwidth;
    }
 
     .primary-footer-link {
@@ -15,9 +16,9 @@
         width: 50%;
         font-family: $font-secundary;
         font-size: $font-h6;
-        color: $color-link;
+        color: $color-secundary;
         font-weight: bold;
-        background-color: $color-secundary;
+        background-color: transparent;
         padding: .5em;
     }
 

@@ -3,7 +3,7 @@
         width: 100%;
         @extend %center;
         margin-bottom: 1em;
-        margin-top: .5em;
+        margin-top: 2em;
 
     }
 
@@ -16,19 +16,25 @@
  //MEDIA QUERIES MAIN-SECTION
  @media all and (min-width: 768px){
 
-    .wrapper--main--section{
+    .insection--main--one{
         display: flex;
         justify-content: space-between;
         flex-direction: row;
-
+        width: 100%;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        background-color: $color-secundary;
     }
 
-    .insection--main--one,
-    .insection--main--two{
-        width: 50%;
-        margin-right: 10px;
-        background-color: $color-complementary;
-    }
+        .section--list{
+            width: 50%;
 
+        }
+
+        .section--sublist--item{
+            width: 50%;
+            background-color: $color-secundary;
+            margin-top: 0;
+        }
 
 }

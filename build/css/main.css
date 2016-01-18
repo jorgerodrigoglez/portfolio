@@ -65,7 +65,7 @@ h6 {
 
 .description--text__section {
   width: 100%;
-  font-size: 1.5em;
+  font-size: 2.5em;
   text-align: center;
   font-family: "Cuprum", sans-serif;
   border-top: solid 3px rgba(0, 191, 255, 0.5);
@@ -142,6 +142,8 @@ h6 {
   color: black; }
 
 @media all and (min-width: 768px) {
+  .main--nav {
+    margin-top: 3em; }
   .main--nav--list {
     display: flex;
     width: 100%;
@@ -154,7 +156,7 @@ h6 {
     text-align: center;
     background-color: rgba(224, 255, 255, 0.7);
     border-left: none;
-    border: solid 5px rgba(0, 191, 255, 0.5);
+    border: solid 4px black;
     padding: 0;
     margin-top: 0;
     margin-bottom: .5em;
@@ -174,8 +176,7 @@ h6 {
     justify-content: space-around; }
   .main--nav--list--item {
     font-size: 3em;
-    width: 30%;
-    padding: .25em; } }
+    width: 30%; } }
 
 .nav--pages {
   display: block;
@@ -183,9 +184,9 @@ h6 {
   text-align: center;
   background-color: rgba(224, 255, 255, 0.7);
   font-family: "Cuprum", sans-serif;
-  color: rgba(0, 191, 255, 0.5);
-  font-size: 2.5em;
-  margin-top: .25em; }
+  color: rgba(250, 128, 128, 0.7);
+  font-size: 3.5em;
+  margin-top: .5em; }
 
 @media all and (min-width: 768px) {
   .nav--pages {
@@ -366,13 +367,13 @@ h6 {
   width: 100%; }
 
 .section--list--item {
-  font-family: serif, arial;
+  font-family: "Cuprum", sans-serif;
   font-size: 1.5em;
   background-color: rgba(224, 255, 255, 0.7);
   margin: .25em 0;
   padding: .25em 0; }
   .section--list--item::before {
-    background-color: rgba(250, 128, 128, 0.7);
+    background-color: darkblue;
     content: "";
     margin-left: .5em;
     margin-right: .5em;
@@ -398,7 +399,7 @@ h6 {
   font-family: "Cuprum", sans-serif;
   font-weight: normal;
   color: rgba(123, 104, 238, 0.7);
-  background-color: rgba(0, 191, 255, 0.5);
+  background-color: transparent;
   margin-left: 1.5em;
   padding-left: .5em; }
 
@@ -411,24 +412,18 @@ h6 {
   display: flex;
   width: 100%;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   background-color: rgba(0, 191, 255, 0.5);
   margin-top: .5em;
   margin-bottom: .5em; }
 
 .section--list--footer--item {
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-family: "Cuprum", sans-serif;
   background-color: rgba(0, 191, 255, 0.5);
   padding: .5em;
   margin-right: .2em; }
-  .section--list--footer--item:before {
-    background-color: rgba(0, 191, 255, 0.5);
-    font-family: 'icomoon';
-    content: "\e9b6";
-    padding: .25em;
-    margin-left: .1em; }
 
 .section--list--footer-item a {
   color: darkblue;
@@ -513,7 +508,7 @@ h6 {
 
 .h3--slogan {
   background-color: rgba(224, 255, 255, 0.7);
-  font-size: 1.25em;
+  font-size: 2em;
   font-family: "Quicksand", serif;
   text-align: center;
   padding: .5em 0; }
@@ -531,12 +526,21 @@ h6 {
   font-size: 3.5em;
   color: black;
   text-align: center;
-  text-shadow: 2px 1px 3px;
-  background-color: rgba(123, 104, 238, 0.7);
+  text-shadow: 1px 1px 1px;
+  background-color: rgba(224, 255, 255, 0.7);
   border-bottom: solid 2px rgba(65, 105, 225, 0.7);
   border-top: solid 3px darkblue;
   border-bottom: solid 3px darkblue;
   padding: .35em 0; }
+
+@media all and (min-width: 768px) {
+  .h3__title {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    display: block; } }
 
 .h4__title {
   font-family: "Cuprum", sans-serif;
@@ -615,7 +619,8 @@ h6 {
   flex-direction: row;
   justify-content: space-between;
   background-color: rgba(224, 255, 255, 0.7);
-  margin-top: .5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   padding: .5em; }
 
 .call-to-action {
@@ -640,43 +645,41 @@ h6 {
   .icon-bubbles {
     display: flex; } }
 
+.follow--buttoms--icons {
+  background-color: rgba(0, 191, 255, 0.5);
+  margin-top: 1.5em; }
+
 .icon-bubble,
 .icon-like,
 .icon-share2 {
-  padding: .25em;
+  padding: .5em;
   margin: 0 .25em;
-  background-color: rgba(224, 255, 255, 0.7);
+  background-color: darkblue;
   font-size: 2.5em;
-  color: darkblue;
+  color: rgba(224, 255, 255, 0.7);
+  border: solid 4px rgba(224, 255, 255, 0.7);
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px; }
 
-.icon-skype,
-.icon-mobile2,
-.icon-calendar {
-  font-size: 2em;
-  color: darkblue;
-  padding: .2em; }
-
 @media all and (min-width: 600px) {
-  .icon-skype,
-  .icon-mobile2,
-  .icon-calendar {
-    font-size: 2.5em;
-    padding: 0 1em; }
-  .icon-calendar,
-  .icon-skype {
-    display: flex; } }
+  .follow--buttoms--icons {
+    background-color: transparent;
+    margin-top: 0; }
+  .icon-bubble,
+  .icon-like,
+  .icon-share2 {
+    background-color: rgba(0, 191, 255, 0.5);
+    color: black; } }
 
 .extra--icons {
   display: block;
   width: 100%;
   border-bottom: solid 2px rgba(250, 128, 128, 0.7);
-  margin: .5em 0;
-  padding: .5em 0;
+  margin: .25em 0;
+  padding: .25em 0;
   background-color: rgba(224, 255, 255, 0.7); }
 
 .icon-clock,
@@ -788,7 +791,8 @@ h6 {
 .wrapper-photos {
   display: flex;
   justify-content: center;
-  width: 100%; }
+  width: 100%;
+  margin-top: 1.5em; }
 
 .logo-figure {
   background-color: transparent; }
@@ -804,7 +808,7 @@ h6 {
 @media all and (min-width: 768px) {
   .photo-logo-dcha {
     width: 8em;
-    height: 12em; }
+    height: 14em; }
   .photo-logo-izq {
     width: 13em;
     height: 14em; } }
@@ -862,37 +866,60 @@ article {
 .main-header-infor {
   background-color: transparent; }
 
+.icon-skype,
+.icon-mobile2,
+.icon-calendar {
+  font-size: 2em;
+  color: darkblue;
+  padding: .2em; }
+
+@media all and (min-width: 600px) {
+  .icon-skype,
+  .icon-mobile2,
+  .icon-calendar {
+    padding: 0 1em; } }
+
 .contact-dates {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: rgba(224, 255, 255, 0.7);
-  margin-bottom: 2em; }
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 191, 255, 0.5);
+  margin-bottom: .25em; }
 
 .dates {
   background-color: rgba(0, 191, 255, 0.5);
   line-height: 1.5em;
   padding: 5px 0; }
 
+@media all and (min-width: 600px) {
+  .contact-dates {
+    flex-direction: row;
+    justify-content: space-around; } }
+
 /*LAYOUT-SECTION*/
 .wrapper--main--section {
   width: 100%;
   margin-bottom: 1em;
-  margin-top: .5em; }
+  margin-top: 2em; }
 
 .insection--main--one {
   margin-bottom: .5em; }
 
 @media all and (min-width: 768px) {
-  .wrapper--main--section {
+  .insection--main--one {
     display: flex;
     justify-content: space-between;
-    flex-direction: row; }
-  .insection--main--one,
-  .insection--main--two {
+    flex-direction: row;
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: rgba(224, 255, 255, 0.7); }
+  .section--list {
+    width: 50%; }
+  .section--sublist--item {
     width: 50%;
-    margin-right: 10px;
-    background-color: rgba(0, 191, 255, 0.5); } }
+    background-color: rgba(224, 255, 255, 0.7);
+    margin-top: 0; } }
 
 /*PRIMARY FOOTER*/
 .primary-footer {
@@ -900,18 +927,19 @@ article {
   width: 100%;
   table-layout: fixed;
   text-align: center;
-  background-color: rgba(0, 191, 255, 0.5);
+  background-color: darkblue;
   padding: 1.5em;
-  margin-top: 1.5em; }
+  margin-top: 1.5em;
+  margin-bottom: 1.5em; }
 
 .primary-footer-link {
   display: table-cell;
   width: 50%;
   font-family: "Quicksand", serif;
   font-size: 1.25em;
-  color: darkblue;
+  color: rgba(224, 255, 255, 0.7);
   font-weight: bold;
-  background-color: rgba(224, 255, 255, 0.7);
+  background-color: transparent;
   padding: .5em; }
 
 @media all and (min-width: 600px) {

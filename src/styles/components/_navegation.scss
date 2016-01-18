@@ -37,6 +37,10 @@
 
  @media all and (min-width: 768px){
 
+    .main--nav{
+        margin-top: 3em;
+    }
+
     .main--nav--list{
         display: flex;
         width: 100%;
@@ -52,7 +56,7 @@
                 text-align: center;
                 background-color: $color-secundary;
                 border-left: none;
-                border: solid 5px $color-complementary;
+                border: solid 4px $black;
                 padding: 0;
                 margin-top: 0;
                 margin-bottom: .5em;
@@ -76,7 +80,6 @@
        .main--nav--list--item{
             font-size: $font-h2;
             width: 30%;
-            padding: .25em;
     }
 
 }
@@ -89,9 +92,9 @@
     text-align: center;
     background-color: $color-secundary;
     font-family: $font-main;
-    color: $color-complementary;
-    font-size: $font-h3;
-    margin-top: .25em;
+    color: $color-main;
+    font-size: $font-h1;
+    margin-top: .5em;
 }
 
 @media all and (min-width: 768px){

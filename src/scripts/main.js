@@ -13,7 +13,7 @@
         var panelCookies = document.getElementById('panelCookies');
 
 
-      //Navegador Desktop
+    //Navegador Desktop
 
         mainPanel.addEventListener('click', onSwipe);
         removePanel.addEventListener('click', removeSwipe);
