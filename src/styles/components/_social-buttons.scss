@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: $color-complementary;
+    background-color: $color-secundary;
     max-width: $max-width;
     padding: 1em 0;
     margin: 1em 0;
@@ -16,8 +16,8 @@
     .icon-google-plus3,
     .icon-instagram,
     .icon-pinterest {
-        font-size: $font-h2;
-        color: $color-link;
+        font-size: $font-h1;
+        color: $color-headers;
         padding: 0 .1em;
     }
 
@@ -28,7 +28,7 @@
         .icon-google-plus3,
         .icon-instagram,
         .icon-pinterest {
-            font-size: $font-h1;
+            font-size: $font-h1*1.2;
         }
 
 }

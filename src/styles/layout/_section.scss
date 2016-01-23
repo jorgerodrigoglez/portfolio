@@ -8,33 +8,22 @@
     }
 
 .insection--main--one{
-    margin-bottom : .5em;
+    margin: 0;
 
 }
 
 
  //MEDIA QUERIES MAIN-SECTION
- @media all and (min-width: 768px){
+ @media all and (min-width: 1024px){
 
     .insection--main--one{
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         width: 100%;
-        margin-top: 2em;
-        margin-bottom: 2em;
-        background-color: $color-secundary;
+        margin-top: 1em;
+        margin-bottom: .5em;
     }
 
-        .section--list{
-            width: 50%;
-
-        }
-
-        .section--sublist--item{
-            width: 50%;
-            background-color: $color-secundary;
-            margin-top: 0;
-        }
 
 }

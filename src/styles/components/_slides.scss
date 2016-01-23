@@ -5,9 +5,9 @@
 .off-canvas-chat {
   background-color: $color-main;
   position:absolute;
-  top: 14em;
+  top: 42em;
   left: 0;
-  height: 410px;
+  height: 465px;
   width: 100%;
   color: $color-link;
 
@@ -22,9 +22,9 @@
 .off-canvas-contact {
   background-color: $color-main;
   position:absolute;
-  top: 14em;
+  top: 42em;
   left: 0;
-  height: 410px;
+  height: 465px;
   width: 100%;
   color: $color-link;
 
@@ -37,10 +37,11 @@
 
 //MEDIA QUERIES
 
-@media all and (min-width: 768px){
+@media all and (min-width: 600px){
     .off-canvas-chat,
     .off-canvas-contact{
-        top:15em;
+        top:30em;
+        height: 400px;
     }
 }
 
@@ -105,6 +106,7 @@
     width: 100%;
     background-color: $color-secundary;
     text-align: center;
+    display: none;
 
     z-index: 5;
 

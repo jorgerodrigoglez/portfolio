@@ -8,6 +8,7 @@
     .main-header-infor{
         background-color: transparent;
     }
+
 //CONTACT-ICONS
 
         .icon-skype,
@@ -38,8 +39,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: $color-complementary;
     margin-bottom: .25em;
+    margin-top: .25em;
+    border-bottom: solid 5px $color-complementary;
 }
     .dates{
         background-color: $color-complementary;
