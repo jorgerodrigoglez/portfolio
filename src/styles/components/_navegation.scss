@@ -90,14 +90,14 @@
     text-align: center;
     background-color: $color-secundary;
     font-family: $font-main;
-    color: $color-main;
-    font-size: $font-h1;
+    color: $color-link;
+    font-size: $font-h2;
     margin-top: .5em;
 }
 
 @media all and (min-width: 768px){
     .nav--pages{
-        font-size: $font-h1;
+        font-size: $font-h1*1.2;
     }
 
 }

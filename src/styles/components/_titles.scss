@@ -9,12 +9,14 @@
 
 
 .h2--slogan {
-    background-color: $color-complementary;
-    color: $color-link;
+    background-color: $color-secundary;
+    color: $color-complementary;
     text-align: center;
     font-size: $font-h3;
-    font-family: $font-secundary;
+    font-family: $font-main;
     padding: .25em 0;
+    margin-top: .25em;
+    margin-bottom: .25em;
 }
 
 .h3--slogan{
@@ -35,7 +37,7 @@
     }
 
     .h2--slogan{
-      font-size: $font-h2;
+      font-size: $font-h1*1.2;
     }
 
     .h3--slogan{

@@ -183,13 +183,13 @@ body, article, .main--header, .wrapper--main--section {
   text-align: center;
   background-color: rgba(224, 255, 255, 0.7);
   font-family: "Cuprum", sans-serif;
-  color: rgba(250, 128, 128, 0.7);
-  font-size: 3.5em;
+  color: darkblue;
+  font-size: 3em;
   margin-top: .5em; }
 
 @media all and (min-width: 768px) {
   .nav--pages {
-    font-size: 3.5em; } }
+    font-size: 4.2em; } }
 
 /*SLIDES*/
 .off-canvas-chat {
@@ -519,12 +519,14 @@ body, article, .main--header, .wrapper--main--section {
   padding: .25em; }
 
 .h2--slogan {
-  background-color: rgba(0, 191, 255, 0.5);
-  color: darkblue;
+  background-color: rgba(224, 255, 255, 0.7);
+  color: rgba(0, 191, 255, 0.5);
   text-align: center;
   font-size: 2.5em;
-  font-family: "Quicksand", serif;
-  padding: .25em 0; }
+  font-family: "Cuprum", sans-serif;
+  padding: .25em 0;
+  margin-top: .25em;
+  margin-bottom: .25em; }
 
 .h3--slogan {
   background-color: rgba(224, 255, 255, 0.7);
@@ -537,7 +539,7 @@ body, article, .main--header, .wrapper--main--section {
   .h1 {
     font-size: 3.5em; }
   .h2--slogan {
-    font-size: 3em; }
+    font-size: 4.2em; }
   .h3--slogan {
     font-size: 2em; } }
 
@@ -913,7 +915,7 @@ article {
   border-bottom: solid 5px rgba(0, 191, 255, 0.5); }
 
 .dates {
-  background-color: rgba(0, 191, 255, 0.5);
+  background-color: rgba(224, 255, 255, 0.7);
   line-height: 1.5em;
   padding: 5px 0; }
 
