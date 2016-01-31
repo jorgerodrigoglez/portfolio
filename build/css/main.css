@@ -662,9 +662,17 @@ body, article, .main--header, .wrapper--main--section {
   display: none; }
 
 @media all and (min-width: 600px) {
-  .icon-files-empty,
-  .icon-bubbles {
+  .icon-files-empty {
     display: flex; } }
+
+@media all and (min-width: 768px) {
+  .call-to-action--icons {
+    justify-content: space-around; }
+  .icon-phone {
+    display: none; }
+  .icon-bubbles {
+    display: flex;
+    float: left; } }
 
 .follow--buttoms {
   margin-top: 2em; }
