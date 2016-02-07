@@ -14,7 +14,7 @@
         .main--nav--list--item{
             width: 100%;
             background-color: $color-secundary;
-            font-size: $font-h2;
+            font-size: $font-h3;
             font-family: $font-main;
             text-align: center;
             text-shadow: 2px 1px 3px;
@@ -88,6 +88,7 @@
     display: block;
     width: 100%;
     text-align: center;
+    @extend %center;
     background-color: $color-secundary;
     font-family: $font-main;
     color: $color-link;
@@ -97,7 +98,12 @@
 
 @media all and (min-width: 768px){
     .nav--pages{
+        width: 35%;
+        padding: .25em;
         font-size: $font-h1*1.2;
+        border: solid;
+        border-radius: 50%;
+
     }
 
 }

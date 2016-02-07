@@ -31,8 +31,9 @@
         .section--list--item{
             font-size: $font-h2;
             text-align: center;
-            border-top: dashed 4px $color-main;
+            border-top: dashed 4px $color-headers;
             padding: 1em 0;
+            border-bottom: none;
         }
 }
 
@@ -54,40 +55,53 @@
 /*SUBLIST-ITEM*/
 
     .section--sublist--item{
-        background-color: $color-complementary;
+        background-color: $color-secundary;
         margin-left: 1em;
         margin-right: 1em;
         margin-top: 1em;
         margin-bottom: 2.5em;
         padding: 2.5em;
+        border: solid 1px $color-headers;
         @include vendors (border-radius, 30%);
     }
 
         .section--sublist--items{
             padding: .5em 0;
             font-size: $font-h5;
-            font-family: $font-default;
+            font-family: $font-main;
             margin-left: 0;
             padding-left : .5em;
             text-align: center;
+            text-decoration: underline;
+            color : $color-headers;
 
         }
 
             .section--sublist--items a{
-                color : $color-link;
+
                 text-decoration: underline;
             }
 
 //MEDIA-QUERIES
 
-@media all and (min-width: 768px){
-    .section--sublist--item{
+@media all and (min-width: 600px){
+    .section--sublist--items{
+        font-size: $font-h4;
+    }
 
+}
+
+@media all and (min-width: 768px){
+    .section--sublist--items{
+        font-size: $font-h3;
     }
 
 }
 
 @media all and (min-width: 1024px){
+    .section--sublist--items{
+        font-size: $font-h2;
+    }
 
     .section--sublist--item{
         width: 50%;
@@ -105,23 +119,30 @@
         flex-wrap : wrap;
         margin-top: .5em;
         margin-bottom: .5em;
-        background-color: $blue;
     }
 
         .section--list--footer--item{
-            font-size: $font-h6;
+            font-size: $font-h5;
             font-family: $font-main;
-            background-color: $color-secundary;
             padding: .5em;
             margin-right: .2em;
+            border-radius: 20px;
 
         }
 
             .section--list--footer-item a{
-                color: $color-link;
-                background-color: $color-secundary;
                 padding: .25em;
             }
+
+//MEDIA-QUERIES
+
+ @media all and (min-width: 600px){
+    .section--list--footer--item{
+            font-size: $font-h4;
+    }
+
+}
+
 
 
 /*FOOTER-SECTION-LINKS*/
@@ -137,60 +158,45 @@
 
 }
 
-    .footer--section--item__a,
-    .footer--section--item__b{
-        font-size: $font-h4;
-        text-transform: uppercase;
-        font-family: $font-main;
+    .footer--section--item {
+        font-size: $font-h5;
+        font-family: $font-secundary;
         padding: .5em 0;
         margin: .25em;
     }
 
-        .footer--section--item__a a{
-            background-color: $blue;
-            color: $color-secundary;
-            border: solid 5px $color-complementary;
+        .footer--section--item a{
+            background-color: $color-headers;
+            color: $black;
+            border: solid 3px $color-secundary;
             @include vendors(border-radius, 50px);
             padding: .5em;
 
-                 &::before{
-                    font-family: 'icomoon';
-                    content: "\eab7";
-                    margin-right: .25em;
-                    padding: .25em;
-                    color: $black;
-                }
         }
 
-        .footer--section--item__b a{
-            background-color: $blue;
-            color: $color-secundary;
-            border: solid 5px $color-complementary;
-            @include vendors(border-radius, 50px);
-            padding: .5em;
 
-                 &::before{
-                    font-family: 'icomoon';
-                    content: "\e90e";
-                    padding: .25em;
-                    margin-right: .25em;
-                    color: $black;
-                }
-        }
 
-//MSDIA-QUERIES
+//MEDIA-QUERIES
 
  @media all and (min-width: 768px){
-    .footer--section--item__a,
-    .footer--section--item__b{
-        font-size: $font-h5*1.2;
+    .footer--section{
+        margin-bottom: 1em;
+        margin-top: 1em;
     }
+        .footer--section--item {
+            font-size: $font-h5*1.2;
+        }
+
+            .footer--section--item a{
+                background-color: $color-secundary;
+                border: solid 2px $color-complementary;
+                color: $color-headers;
+            }
 
 }
 
     @media all and (min-width: 1024px){
-        .footer--section--item__a,
-        .footer--section--item__b{
+        .footer--section--item {
             font-size: $font-h4;
         }
 

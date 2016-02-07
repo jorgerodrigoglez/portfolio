@@ -34,49 +34,5 @@
 }
 
 
-/*FOLLOW-BUTTONS*/
-
-    .follow--buttoms{
-        width: 100%;
-        margin: .5em 0;
-        background-color: transparent;
-        text-align: center;
-    }
-
-
-        .follow--buttoms--icons{
-            display: block;
-            width: 100%;
-            background-color: $color-secundary;
-            padding: .5em 0;
-            margin-top: 1em;
-        }
-
-        //TWITTER WITGET
-        .twitter-follow-button{
-            margin-left: 2em;
-        }
-
-
-@media all and (min-width: 600px){
-
-    .follow--buttoms{
-        display: flex;
-        width: 100%;
-        justify-content: row;
-        flex-direction: space-between;
-    }
-
-
-        .follow--buttoms--icons{
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            width: 50%;
-            margin: 0;
-            padding: 0;
-        }
-
-}
 
 

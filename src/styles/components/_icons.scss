@@ -45,7 +45,7 @@
     display: flex;
     width: 100%;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     background-color: $color-secundary;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -60,7 +60,6 @@
         cursor: pointer;
     }
 
-    .icon-files-empty,
     .icon-phone,
     .icon-bubbles {
         font-size: $font-h1;
@@ -75,15 +74,10 @@
 
 //MEDIA QUERIES
 
-@media all and (min-width: 600px){
-    .icon-files-empty{
-        display: flex;
-    }
-}
 
 @media all and (min-width: 768px){
     .call-to-action--icons{
-        justify-content: space-around;
+        justify-content: center;
     }
     .icon-phone{
       display: none;
@@ -91,79 +85,96 @@
 
     .icon-bubbles{
         display: flex;
-        float: left;
     }
+
 
 }
 
 
 //FOLLOW BUTTONS
-
 .follow--buttoms{
-    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
 }
 
-    .follow--buttoms--icons{
-        background-color: $color-complementary;
-        margin-top: 1.5em;
-    }
+        .follow--buttoms--icons{
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color: $color-secundary;
+            padding: .5em 0;
+            margin-top: .5em;
+        }
+
 
         .icon-bubble,
         .icon-like,
         .icon-share2{
             padding: .5em;
             margin: 0 .25em;
-            background-color: $color-link;
+            background-color: $color-headers;
             font-size: $font-h3;
-            color: $color-secundary;
+            color: $black;
             border: solid 4px $color-complementary;
             @include vendors(border-radius, 50px);
         }
 
-//MEDIA-QUERIES
 
- @media all and (min-width: 600px){
-    .follow--buttoms--icons{
-        background-color: transparent;
-        border-top : solid 1px $blue;
-        margin-top: 0;
-        padding-top: 1em;
+
+@media all and (min-width: 768px){
+
+    .follow--buttoms{
+        justify-content: space-between;
+        flex-direction: row;
     }
 
-        .icon-bubble,
-        .icon-like,
-        .icon-share2{
+
+        .follow--buttoms--icons{
+            display: flex;
+            justify-content: flex-end;
+            order: 2;
+            width: 40%;
             background-color: $color-secundary;
-            color: $color-link;
+            margin: 0;
+            padding: 0;
         }
+
+
 }
+
 
 //EXTRA ICONS
 
 .extra--icons{
-    display: table;
-    table-layout: fixed;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
     width: 100%;
-    margin-bottom: 3em;
-    padding: .25em 0;
-    background-color: $color-secundary;
+    margin-bottom: 2em;
+    padding: 1em 0;
+    background-color: $color-complementary;
+
 }
 
     .icon-clock,
     .icon-location{
-        display: table-cell;
         font-size: $font-h3;
         padding: 0 .25em;
         color: $color-link;
     }
 
 
- @media all and (min-width: 600px){
+ @media all and (min-width: 768px){
     .extra--icons{
-        display: flex;
-        width: 50%;
-        flex-direction: row;
-        justify-content: flex-start;
+        order: 1;
+        width: 60%;
+        margin-bottom: 0;
+        padding: 1.25em 0;
+        background-color: $color-secundary;
+        border-top: solid 5px $color-complementary;
+        border-bottom: solid 5px $color-complementary;
     }
 
 }

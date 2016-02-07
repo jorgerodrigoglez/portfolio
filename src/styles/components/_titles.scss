@@ -10,9 +10,9 @@
 
 .h2--slogan {
     background-color: $color-secundary;
-    color: $color-complementary;
+    color: $color-headers;
     text-align: center;
-    font-size: $font-h3;
+    font-size: $font-h2;
     font-family: $font-main;
     padding: .25em 0;
     margin-top: .25em;
@@ -51,7 +51,7 @@
 //SECUNDARY TITLES
 
 .h3__title{
-    font-family: $font-main;
+    font-family: $font-secundary;
     font-size: $font-h1;
     color: $black;
     text-align: center;
@@ -69,6 +69,8 @@
     display: block;
     width: 50%;
     border-bottom: solid 5px $blue;
+    border-top: solid 2px $color-main;
+    background-color: $color-complementary;
 
   }
 
