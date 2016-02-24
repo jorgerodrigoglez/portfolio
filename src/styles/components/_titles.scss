@@ -67,10 +67,8 @@
   .h3__title{
     @include vendors(border-radius, 50px);
     display: block;
-    width: 50%;
+    width: 100%;
     border-bottom: solid 5px $blue;
-    border-top: solid 2px $color-main;
-    background-color: $color-complementary;
 
   }
 

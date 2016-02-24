@@ -85,24 +85,33 @@
 //BLOG-
 
 .nav--pages{
-    display: block;
-    width: 100%;
-    text-align: center;
-    @extend %center;
+    position: absolute;
+    top: .75em;
+    right: .25em;
     background-color: $color-secundary;
     font-family: $font-main;
-    color: $color-link;
     font-size: $font-h2;
-    margin-top: .5em;
+    color: $color-link;
 }
+
+        .icon-wordpress2{
+            color: $color-headers;
+        }
+
+//MEDIA QUERIES
 
 @media all and (min-width: 768px){
     .nav--pages{
-        width: 35%;
-        padding: .25em;
-        font-size: $font-h1*1.2;
-        border: solid;
-        border-radius: 50%;
+        font-size: $font-h1;
+        top: 1em;
+
+    }
+
+}
+
+@media all and (min-width: 1024px){
+    .nav--pages{
+        right: 2em;
 
     }
 

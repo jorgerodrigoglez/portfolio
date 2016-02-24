@@ -1,21 +1,24 @@
 /*LISTS-ITEMS*/
 
     .section--list{
-        background-color: $color-secundary;
-        text-align: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         width: 100%;
-        margin-top: 1em;
+        background-color: $color-secundary;
+        width: 100%;
+        text-align: center;
     }
 
         .section--list--item{
+            width: 50%;
             font-family: $font-main;
-            font-size: $font-h3;
+            font-size: $font-h4;
             background-color: $color-secundary;
-            margin: .25em .5em;
             padding: .5em;
-            border-bottom: solid 4px $color-link;
+            border-bottom: double 8px aqua;
+            border-top: double 8px aqua;
             @include vendors (border-radius, 30%);
-            text-align: center;
             font-weight: bold;
 
         }
@@ -23,31 +26,22 @@
 //MEDIA-QUERIES
 
  @media all and (min-width: 768px){
-    .section--list{
-            margin-top: 0;
-
-        }
 
         .section--list--item{
-            font-size: $font-h2;
-            text-align: center;
-            border-top: dashed 4px $color-headers;
-            padding: 1em 0;
-            border-bottom: none;
+            font-size: $font-h4*1.3;
         }
 }
 
  @media all and (min-width: 1024px){
 
-     .section--list{
-            width: 40%;
+        .section--list--item{
+            font-size: $font-h2;
+            text-align: center;
+            padding: 1em 0;
         }
-
-     .section--list--item{
-            font-size: $font-h3;
-    }
-
 }
+
+
 
 
 
@@ -92,6 +86,7 @@
 }
 
 @media all and (min-width: 768px){
+
     .section--sublist--items{
         font-size: $font-h3;
     }
@@ -99,13 +94,15 @@
 }
 
 @media all and (min-width: 1024px){
-    .section--sublist--items{
-        font-size: $font-h2;
-    }
 
     .section--sublist--item{
         width: 50%;
     }
+
+    .section--sublist--items{
+        font-size: $font-h2;
+    }
+
 
 }
 
@@ -171,6 +168,7 @@
             border: solid 3px $color-secundary;
             @include vendors(border-radius, 50px);
             padding: .5em;
+            text-decoration: underline;
 
         }
 
@@ -189,7 +187,6 @@
 
             .footer--section--item a{
                 background-color: $color-secundary;
-                border: solid 2px $color-complementary;
                 color: $color-headers;
             }
 
