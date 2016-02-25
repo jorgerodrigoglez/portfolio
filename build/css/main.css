@@ -321,8 +321,8 @@ body, article, .main--header, .wrapper--main--section {
 .icon-google-plus3,
 .icon-instagram,
 .icon-pinterest {
-  font-size: 3.5em;
-  color: rgba(123, 104, 238, 0.7);
+  font-size: 3em;
+  color: rgba(178, 34, 34, 0.7);
   padding: 0 .1em; }
 
 @media all and (min-width: 600px) {
@@ -509,12 +509,16 @@ body, article, .main--header, .wrapper--main--section {
 
 .h3__title {
   font-family: "Quicksand", serif;
-  font-size: 3.5em;
+  font-size: 2.5em;
   color: black;
   text-align: center;
   text-shadow: 1px 1px 1px;
   background-color: rgba(224, 255, 255, 0.7);
   padding: .35em 0; }
+
+@media all and (min-width: 768px) {
+  .h3__title {
+    font-size: 3em; } }
 
 @media all and (min-width: 1024px) {
   .h3__title {
@@ -525,7 +529,7 @@ body, article, .main--header, .wrapper--main--section {
     border-radius: 50px;
     display: block;
     width: 100%;
-    border-bottom: solid 5px rgba(65, 105, 225, 0.7); } }
+    font-size: 3.5em; } }
 
 .h4__title {
   font-family: "Cuprum", sans-serif;
@@ -651,7 +655,7 @@ body, article, .main--header, .wrapper--main--section {
   padding: .5em;
   margin: 0 .25em;
   background-color: rgba(123, 104, 238, 0.7);
-  font-size: 2.5em;
+  font-size: 2em;
   color: black;
   border: solid 4px rgba(0, 191, 255, 0.5);
   -webkit-border-radius: 50px;
@@ -671,7 +675,12 @@ body, article, .main--header, .wrapper--main--section {
     width: 40%;
     background-color: rgba(224, 255, 255, 0.7);
     margin: 0;
-    padding: 0; } }
+    padding: 0; }
+  .icon-bubble,
+  .icon-like,
+  .icon-share2 {
+    background-color: transparent;
+    font-size: 2.5em; } }
 
 .extra--icons {
   display: flex;
@@ -828,7 +837,8 @@ body {
   margin-left: auto; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: rgba(178, 34, 34, 0.7); }
 
 li {
   list-style-type: none; }

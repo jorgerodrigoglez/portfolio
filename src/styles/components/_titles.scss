@@ -52,7 +52,7 @@
 
 .h3__title{
     font-family: $font-secundary;
-    font-size: $font-h1;
+    font-size: $font-h3;
     color: $black;
     text-align: center;
     text-shadow: 1px 1px 1px;
@@ -62,14 +62,22 @@
 
 //MEDIA QUERIES
 
+@media all and (min-width: 768px){
+
+  .h3__title{
+    font-size: $font-h2;
+  }
+
+
+}
+
 @media all and (min-width: 1024px){
 
   .h3__title{
     @include vendors(border-radius, 50px);
     display: block;
     width: 100%;
-    border-bottom: solid 5px $blue;
-
+    font-size: $font-h1;
   }
 
 

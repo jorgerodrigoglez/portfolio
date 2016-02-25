@@ -115,7 +115,7 @@
             padding: .5em;
             margin: 0 .25em;
             background-color: $color-headers;
-            font-size: $font-h3;
+            font-size: $font-h4;
             color: $black;
             border: solid 4px $color-complementary;
             @include vendors(border-radius, 50px);
@@ -140,6 +140,15 @@
             margin: 0;
             padding: 0;
         }
+
+
+            .icon-bubble,
+            .icon-like,
+            .icon-share2{
+                background-color: transparent;
+                font-size: $font-h3;
+
+            }
 
 
 }
